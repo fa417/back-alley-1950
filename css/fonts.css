@@ -1,0 +1,689 @@
+@charset "UTF-8";
+
+/* サイズ */
+:root {
+    --font-size-12px: 0.75rem;
+    --font-size-14px: 0.875rem;
+    --font-size-16px: 1rem;
+    --font-size-18px: 1.125rem;
+    --font-size-24px: 1.5rem;
+    --font-size-36px: 2.25rem;
+    --font-size-46px: 2.875rem;
+    /*  */
+
+    /* 太さ */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    /*  */
+
+    /* カラー */
+    --red-color: #b22222;
+    --blue-color: #1c1c3b;
+    --white-color: #f5f5f5;
+    --black-color: #121212;
+    /*  */
+}
+
+/*  */
+
+/* 全体 */
+* {
+    font-style: normal;
+}
+
+html {
+    font-size: var(--font-size-16px);
+    font-weight: var(--font-weight-light);
+}
+
+body {
+    color: var(--black-color);
+    font-family: '源ノ明朝', serif;
+    line-height: 1.6;
+}
+
+/*  */
+
+/* メインセクション */
+.name {
+    font-size: var(--font-size-12px);
+    font-family: 'Merriweather', serif;
+    font-weight: var(--font-weight-bold);
+}
+
+.name-number {
+    font-size: var(--font-size-12px);
+    font-family: '源ノ明朝', serif;
+    font-weight: var(--font-weight-bold);
+}
+
+.name-sub {
+    font-size: var(--font-size-12px);
+    font-family: '源ノ明朝', serif;
+    font-weight: var(--font-weight-regular);
+}
+
+.title {
+    font-size: var(--font-size-36px);
+    font-family: 'Merriweather', serif;
+    font-weight: var(--font-weight-bold);
+}
+
+.title-number {
+    font-size: var(--font-size-36px);
+    font-family: '源ノ明朝', serif;
+    font-weight: var(--font-weight-bold);
+}
+
+.title-sub {
+    font-size: var(--font-size-24px);
+    font-family: '源ノ明朝', serif;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: .05rem;
+}
+
+.menu-button {
+    background: var(--white-color);
+    border: 2px solid var(--black-color);
+    font-family: 'Merriweather', serif;
+    font-size: var(--font-size-16px);
+    font-weight: var(--font-weight-light);
+}
+
+
+.heading.bw {
+    color: var(--white-color);
+    font-size: var(--font-size-24px);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+.item {
+    color: var(--white-color);
+    font-size: var(--font-size-24px);
+    font-family: 'Merriweather', serif;
+    font-weight: var(--font-weight-bold);
+}
+
+.menu-items a {
+    color: var(--white-color);
+    font-size: var(--font-size-16px);
+    font-family: 'Merriweather', serif;
+    font-weight: var(--font-weight-regular);
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.close-menu {
+    color: var(--white-color);
+    font-size: var(--font-size-18px);
+}
+
+.loop-text p {
+    color: var(--white-color);
+    font-size: var(--font-size-16px);
+    font-family: 'Merriweather', serif;
+}
+
+.loop-text .number {
+    color: var(--white-color);
+    font-size: var(--font-size-16px);
+    font-family: '源ノ明朝', serif;
+    font-weight: var(--font-weight-bold);
+}
+
+/*  */
+
+/* コンセプトセクション */
+.concept-section .container .section-title.rw,
+.menu-section .container .section-title.bw,
+.style-hair-section .container .section-title.rw {
+    color: var(--white-color);
+    font-size: var(--font-size-24px);
+    font-family: 'Merriweather', serif;
+    font-weight: var(--font-weight-bold);
+    margin-left: 10px;
+}
+
+.change-color.r {
+    color: var(--red-color);
+    font-size: var(--font-size-24px);
+    font-weight: var(--font-weight-bold);
+}
+
+.section-sub.w {
+    color: var(--white-color);
+    font-size: var(--font-size-12px);
+    font-weight: var(--font-weight-regular);
+    margin-left: 10px;
+    letter-spacing: .03rem;
+}
+
+.concept-section .wrapper>p,
+.menu-section .wrapper>p,
+.style-hair-section .wrapper>p {
+    color: var(--white-color);
+    font-size: var(--font-size-16px);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.concept-section .highlight-title {
+    background: var(--red-color);
+    color: var(--white-color);
+    font-size: var(--font-size-24px);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.inner-title {
+    color: var(--black-color);
+    font-size: var(--font-size-14px);
+    white-space: nowrap;
+    font-weight: var(--font-weight-regular);
+}
+
+.text>p {
+    color: var(--black-color);
+    font-size: var(--font-size-12px);
+    letter-spacing: .03rem;
+}
+
+/*  */
+
+/* リーゼントセクション */
+.rezent-section .wrapper>p {
+    color: var(--black-color);
+    font-size: var(--font-size-16px);
+    text-align: justify;
+}
+
+.rezent-section .detail-link,
+.style-hair-section .detail-link {
+    color: var(--white-color);
+    background: var(--red-color);
+    font-size: var(--font-size-18px);
+    font-family: 'Merriweather', serif;
+    font-weight: var(--font-weight-regular);
+    text-decoration: none;
+    padding: 2px 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* メニューセクション */
+.change-color.b {
+    color: var(--blue-color);
+    font-size: var(--font-size-24px);
+    font-family: 'Merriweather', serif;
+    font-weight: var(--font-weight-bold);
+}
+
+.menu-section .first,
+.menu-section .second {
+    background: var(--white-color);
+    width: 100%;
+    color: var(--red-color);
+    font-size: var(--font-size-24px);
+    font-weight: var(--font-weight-bold);
+    display: inline-block;
+}
+
+.menu-section .second {
+    margin-top: 5px;
+}
+
+.menu-section .detail-link {
+    color: var(--white-color);
+    background: var(--blue-color);
+    font-size: var(--font-size-18px);
+    font-family: 'Merriweather', serif;
+    font-weight: var(--font-weight-regular);
+    text-decoration: none;
+    padding: 2px 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/*  */
+
+/* スタイルヘアセクション */
+.style-hair-section .first,
+.style-hair-section .second {
+    background: var(--white-color);
+    width: 100%;
+    color: var(--blue-color);
+    font-size: var(--font-size-24px);
+    font-weight: var(--font-weight-bold);
+    display: inline-block;
+}
+
+.style-hair-section .second {
+    margin-top: 5px;
+}
+
+/*  */
+
+/* フッター */
+footer>p {
+    background: var(--black-color);
+    color: var(--white-color);
+    font-size: var(--font-size-12px);
+    text-align: center;
+}
+
+/*  */
+
+/* アバウトセクション */
+header .header-name {
+    color: var(--white-color);
+    font-size: var(--font-size-12px);
+    font-weight: var(--font-weight-bold);
+}
+
+.section-title.rb {
+    color: var(--blue-color);
+    font-size: var(--font-size-24px);
+    font-family: 'Merriweather', serif;
+    font-weight: var(--font-weight-bold);
+    margin-left: 10px;
+}
+
+.section-sub.b {
+    color: var(--blue-color);
+    font-size: var(--font-size-12px);
+    font-weight: var(--font-weight-regular);
+    margin-left: 10px;
+    letter-spacing: .03rem;
+}
+
+.about-section .wrapper>p {
+    color: var(--black-color);
+    font-size: var(--font-size-16px);
+    text-align: justify;
+}
+
+.scroll>p {
+    color: var(--blue-color);
+    font-family: 'Merriweather', serif;
+    font-size: var(--font-size-16px);
+    margin-top: 10px;
+}
+
+/*  */
+
+/* タイプセクション */
+.description-title,
+.table-title {
+    color: var(--white-color);
+    font-size: var(--font-size-18px);
+    font-family: 'Merriweather', serif;
+    font-weight: var(--font-weight-regular);
+    text-align: center;
+    letter-spacing: .05rem;
+}
+
+.subtitle,
+.entry-blue>p,
+.entry-red>p,
+.table-sub {
+    color: var(--white-color);
+    font-size: var(--font-size-12px);
+    font-family: '源ノ明朝', serif;
+    font-weight: var(--font-weight-regular);
+    text-align: center;
+    letter-spacing: .03rem;
+}
+
+.type-section .subtitle {
+    line-height: .5rem;
+}
+
+.back-blue .description {
+    color: var(--white-color);
+    font-size: var(--font-size-16px);
+    font-weight: var(--font-weight-regular);
+}
+
+.types-section .sp-screen-text,
+.types-section .wide-screen-text {
+    color: var(--white-color);
+    font-size: var(--font-size-16px);
+    text-align: justify;
+    margin: 15px 0;
+    font-weight: var(--font-weight-regular);
+}
+
+.back-blue .menu-style-link,
+.back-blue .hair-style-link {
+    color: var(--white-color);
+    background: var(--red-color);
+    font-size: var(--font-size-18px);
+    font-family: 'Merriweather', serif;
+    font-weight: var(--font-weight-regular);
+    text-decoration: none;
+    padding: 2px 5px;
+}
+
+.back-red .menu-style-link,
+.back-red .hair-style-link {
+    color: var(--white-color);
+    background: var(--blue-color);
+    font-size: var(--font-size-18px);
+    font-family: 'Merriweather', serif;
+    font-weight: var(--font-weight-regular);
+    text-decoration: none;
+    padding: 2px 5px;
+}
+
+/*  */
+
+/* メニューヘアセクション */
+.section-title.br {
+    color: var(--red-color);
+    font-size: var(--font-size-24px);
+    font-family: 'Merriweather', serif;
+    font-weight: var(--font-weight-bold);
+    margin-left: 10px;
+}
+
+.section-sub.r {
+    color: var(--red-color);
+    font-size: var(--font-size-12px);
+    font-weight: var(--font-weight-regular);
+    margin-left: 10px;
+    letter-spacing: .03rem;
+}
+
+.menu-hair-section .subtitle {
+    line-height: .5rem;
+}
+
+
+.entry-content>p {
+    font-size: var(--font-size-16px);
+    font-weight: var(--font-weight-regular);
+    letter-spacing: 2px;
+}
+
+.menu-hair-section .fee {
+    font-size: var(--font-size-16px);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: .03rem;
+}
+
+/*  */
+
+/* オプションメニューセクション */
+.menu-option-section .section-title.ww {
+    color: var(--white-color);
+    font-size: var(--font-size-24px);
+    font-family: 'Merriweather', serif;
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    letter-spacing: .05rem;
+}
+
+.menu-option-section .section-sub.w {
+    color: var(--white-color);
+    font-size: var(--font-size-12px);
+    font-weight: var(--font-weight-regular);
+    text-align: center;
+    letter-spacing: .03rem;
+}
+
+.menu-option-section .fee {
+    color: var(--white-color);
+    font-size: var(--font-size-16px);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: .03rem;
+}
+
+/*  */
+
+/* リーゼントフォトセクション */
+.hair-name-list a {
+    text-decoration: none;
+}
+
+/*  */
+
+.madern-style-heading,
+.modern-photos .style-name {
+    color: var(--black-color);
+    background: var(--white-color);
+    border: 2px solid var(--black-color);
+    font-family: 'Merriweather', serif;
+    font-size: var(--font-size-18px);
+    font-weight: var(--font-weight-regular);
+}
+
+.classic-style-heading,
+.classic-photos .style-name {
+    color: var(--white-color);
+    background: var(--red-color);
+    font-family: 'Merriweather', serif;
+    font-size: var(--font-size-18px);
+    font-weight: var(--font-weight-regular);
+}
+
+.short-style-heading,
+.short-photos .style-name {
+    color: var(--red-color);
+    background: var(--black-color);
+    font-family: 'Merriweather', serif;
+    font-size: var(--font-size-18px);
+    font-weight: var(--font-weight-regular);
+}
+
+.slicked-style-heading,
+.slicked-photos .style-name {
+    color: var(--white-color);
+    background: var(--black-color);
+    font-family: 'Merriweather', serif;
+    font-size: var(--font-size-18px);
+    font-weight: var(--font-weight-regular);
+}
+
+.textured-style-heading,
+.textured-photos .style-name {
+    color: var(--blue-color);
+    background: var(--white-color);
+    border: 2px solid var(--blue-color);
+    font-family: 'Merriweather', serif;
+    font-size: var(--font-size-18px);
+    font-weight: var(--font-weight-regular);
+}
+
+.fade-style-heading,
+.fade-photos .style-name {
+    color: var(--white-color);
+    background: var(--blue-color);
+    font-family: 'Merriweather', serif;
+    font-size: var(--font-size-18px);
+    font-weight: var(--font-weight-regular);
+}
+
+.biker-style-heading,
+.biker-photos .style-name {
+    color: var(--red-color);
+    background: var(--white-color);
+    border: 2px solid var(--red-color);
+    font-family: 'Merriweather', serif;
+    font-size: var(--font-size-18px);
+    font-weight: var(--font-weight-regular);
+}
+
+/*  */
+
+/* リザベーションセクション */
+.number-phone-sp {
+    text-align: center;
+}
+
+.number-phone-sp a {
+    color: var(--white-color);
+    font-size: var(--font-size-18px);
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+    letter-spacing: .05rem;
+}
+
+.web-reservation .number-web {
+    color: var(--black-color);
+    font-size: var(--font-size-18px);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+}
+
+label {
+    font-size: var(--font-size-12px);
+    color: var(--black-color);
+    font-weight: var(--font-weight-regular);
+}
+
+.send {
+    font-size: var(--font-size-18px);
+    padding: 2px 50px;
+}
+
+/*  */
+
+/* アクセスセクション */
+
+.shop-title {
+    color: var(--white-color);
+    font-size: var(--font-size-16px);
+    font-family: 'Merriweather', serif;
+    letter-spacing: .1rem;
+    background: var(--blue-color);
+    font-weight: var(--font-weight-regular);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.postal-code {
+    font-size: var(--font-size-12px);
+    text-align: center;
+}
+
+.address {
+    font-size: var(--font-size-16px);
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.access-info li {
+    font-size: var(--font-size-14px);
+    list-style: none;
+    text-align: center;
+}
+
+.telephone-area p,
+.business-hours-area p,
+.regular-holiday-area p {
+    font-size: var(--font-size-16px);
+    letter-spacing: .05rem;
+    text-align: center;
+}
+
+/*  */
+
+/* ニュースセクション */
+.news-labels label:nth-child(1),
+.news-labels label:nth-child(2),
+.news-labels label:nth-child(3),
+input#news1:checked~.news-labels label[for="news1"],
+input#news2:checked~.news-labels label[for="news2"],
+input#news3:checked~.news-labels label[for="news3"] {
+    font-size: var(--font-size-14px);
+    letter-spacing: .03rem;
+}
+
+.news-title {
+    font-size: var(--font-size-18px);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.news-content p:not(:last-child),
+.styling-detail p {
+    font-size: var(--font-size-16px);
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.new-theme {
+    background: var(--red-color);
+    color: var(--white-color);
+    font-size: var(--font-size-18px);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 5px;
+    padding: 0 5px;
+}
+
+dl {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+dd {
+    color: var(--red-color);
+    font-size: var(--font-size-18px);
+    font-weight: var(--font-weight-bold);
+}
+
+dd:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.contact-info a {
+    color: var(--red-color);
+    font-size: var(--font-size-18px);
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+}
+
+.before-hours {
+    color: var(--red-color);
+    font-size: var(--font-size-18px);
+    font-weight: var(--font-weight-bold);
+}
+
+.after-hours {
+    color: var(--blue-color);
+    font-size: var(--font-size-18px);
+    font-weight: var(--font-weight-bold);
+}
+
+/*  */
+
+/* サンクセクション */
+.thankyou-box {
+    text-align: center;
+}
+
+.finish-heading {
+    font-size: var(--font-size-24px);
+}
+
+.thankyou-box p {
+    font-size: var(--font-size-16px);
+}
+
+.reservation-actions a {
+    background: var(--red-color);
+    color: var(--white-color);
+    font-size: var(--font-size-18px);
+    font-family: 'Merriweather', serif;
+    font-weight: var(--font-weight-regular);
+    text-decoration: none;
+    padding: 2px 5px;
+}
+
+/*  */

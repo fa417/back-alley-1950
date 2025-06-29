@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Style</title>
+    <meta name="description" content="リーゼント専門理容室によるスタイル写真集。カット・セットの参考に、人気のヘアスタイルを写真で紹介。">
+    <link rel="icon" href="../img/hp/logo.webp" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+
+<body>
+    <!-- PC表示時(701px~)の背景＋左右レイアウト -->
+    <div class="pc-container">
+        <div class="pc-back">
+            <!-- 背景カラーオーバーレイを追加 -->
+            <div class="overlay"></div>
+        </div>
+
+        <!-- 画面三分割した場合 - 左画面 - -->
+        <div class="left-screen">
+            <div class="model-block">
+                <div id="comb"></div>
+                <p class="hint">
+                    360° view — drag to rotate
+                </p>
+            </div>
+        </div>
+
+        <!-- 画面三分割した場合 - 右画面 - -->
+        <div class="right-screen">
+            <ul class="pc-side-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#concept">Concept</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="rezent.html">Rezent</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="style.html">Hair Style</a></li>
+                <li><a href="reservation.html#reservation">Reservation</a></li>
+                <li><a href="reservation.html#access">Access</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sp-layout">
+        <div class="sp-home">
+            <header class="type-photos-detail">
+                <h1 class="header-name">Hair Style</h1>
+                <label class="menu-button" for="menu-toggle">Menu</label>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <nav id="nav-menu">
+                    <!-- フォントカラー変更: 'bw'クラスはブルーホワイトカラーを適用 -->
+                    <div class="heading bw"><span class="change-color b">M</span>enu</div>
+                    <button class="close-menu" onclick="closeMenu()">&times;</button>
+                    <ul class="menu-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#concept">Concept</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="rezent.html">Rezent</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="style.html">Hair Style</a></li>
+                        <li><a href="reservation.html#reservation">Reservation</a></li>
+                        <li><a href="reservation.html#access">Access</a></li>
+                    </ul>
+                    <img src="../img/hp/illustration-white.webp" alt="リーゼントのイラスト">
+                    <div class="double"></div>
+                    <div class="double-line-secondary"></div>
+                </nav>
+            </header>
+
+            <main>
+                <section class="rezent-photos-section" id="hair-style">
+                    <div class="container">
+                        <!-- フォントカラー変更: 'br'クラスはブルーレッドカラーを適用 -->
+                        <h2 class="section-title br"><span class="change-color b">H</span>air Style</h2>
+                        <p class="section-sub r">- ヘアスタイル -</p>
+
+                        <div class="hair-name-list">
+                            <a href="#modern-style">
+                                <h3 class="madern-style-heading">- Modern Rezent -</h3>
+                            </a>
+                            <a href="#classic-style">
+                                <h3 class="classic-style-heading">- Classic Rezent -</h3>
+                            </a>
+                            <a href="#short-style">
+                                <h3 class="short-style-heading">- Short Rezent -</h3>
+                            </a>
+                            <a href="#slicked-style">
+                                <h3 class="slicked-style-heading">- Slicked-back Rezent -</h3>
+                            </a>
+                            <a href="#textured-style">
+                                <h3 class="textured-style-heading">- Textured Rezent -</h3>
+                            </a>
+                            <a href="#fade-style">
+                                <h3 class="fade-style-heading">- Fade Rezent -</h3>
+                            </a>
+                            <a href="#biker-style">
+                                <h3 class="biker-style-heading">- Biker-style Rezent -</h3>
+                            </a>
+                        </div>
+
+                        <div id="imageModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+
+                        <div class="photos">
+
+                            <div class="modern-photos" id="modern-style">
+                                <h4 class="style-name">- Modern Rezent -</h4>
+                                <div class="img-scroll">
+                                    <img src="../img/hair-style/modern-rezent/1.webp" alt="モダンリーゼント1 (Modern Rezent 1)"
+                                        class="modal-img">
+                                    <img src="../img/hair-style/modern-rezent/2.webp" alt="モダンリーゼント2 (Modern Rezent 2)"
+                                        class="modal-img">
+                                    <img src="../img/hair-style/modern-rezent/3.webp" alt="モダンリーゼント3 (Modern Rezent 3)"
+                                        class="modal-img">
+                                    <img src="../img/hair-style/modern-rezent/4.webp" alt="モダンリーゼント4 (Modern Rezent 4)"
+                                        class="modal-img">
+                                    <img src="../img/hair-style/modern-rezent/5.webp" alt="モダンリーゼント5 (Modern Rezent 5)"
+                                        class="modal-img">
+                                    <img src="../img/hair-style/modern-rezent/6.webp" alt="モダンリーゼント6 (Modern Rezent 6)"
+                                        class="modal-img">
+                                </div>
+                            </div>
+
+                            <div class="classic-photos" id="classic-style">
+                                <h4 class="style-name">- Classic Rezent -</h4>
+                                <div class="img-scroll">
+                                    <img src="../img/hair-style/classic-rezent/1.webp"
+                                        alt="クラシッククラシックリーゼント1(Classic Rezent1)" class="modal-img">
+                                    <img src="../img/hair-style/classic-rezent/2.webp"
+                                        alt="クラシックリーゼント2 (Classic Rezent 2)" class="modal-img">
+                                    <img src="../img/hair-style/classic-rezent/3.webp"
+                                        alt="クラシックリーゼント3 (Classic Rezent 3)" class="modal-img">
+                                    <img src="../img/hair-style/classic-rezent/4.webp"
+                                        alt="クラシックリーゼント4 (Classic Rezent 4)" class="modal-img">
+                                    <img src="../img/hair-style/classic-rezent/5.webp"
+                                        alt="クラシックリーゼント5 (Classic Rezent 5)" class="modal-img">
+                                    <img src="../img/hair-style/classic-rezent/6.webp"
+                                        alt="クラシックリーゼント6 (Classic Rezent 6)" class="modal-img">
+                                </div>
+                            </div>
+
+                            <div class="short-photos" id="short-style">
+                                <h4 class="style-name">- Short Rezent -</h4>
+                                <div class="img-scroll">
+                                    <img src="../img/hair-style/short-rezent/1.webp" alt="ショートリーゼント1 (Short Rezent 1)"
+                                        class="modal-img">
+                                    <img src="../img/hair-style/short-rezent/2.webp" alt="ショートリーゼント2 (Short Rezent 2)"
+                                        class="modal-img">
+                                    <img src="../img/hair-style/short-rezent/3.webp" alt="ショートリーゼント3 (Short Rezent 3)"
+                                        class="modal-img">
+                                    <img src="../img/hair-style/short-rezent/4.webp" alt="ショートリーゼント4 (Short Rezent 4)"
+                                        class="modal-img">
+                                    <img src="../img/hair-style/short-rezent/5.webp" alt="ショートリーゼント5 (Short Rezent 5)"
+                                        class="modal-img">
+                                    <img src="../img/hair-style/short-rezent/6.webp" alt="ショートリーゼント6 (Short Rezent 6)"
+                                        class="modal-img">
+                                </div>
+                            </div>
+
+                            <div class="slicked-photos" id="slicked-style">
+                                <h4 class="style-name">- Slicked-back Rezent -</h4>
+                                <div class="img-scroll">
+                                    <img src="../img/hair-style/slicked-back-rezent/1.webp"
+                                        alt="スリックバックリーゼント1 (Slicked-back Rezent 1)" class="modal-img">
+                                    <img src="../img/hair-style/slicked-back-rezent/2.webp"
+                                        alt="スリックバックリーゼント2 (Slicked-back Rezent 2)" class="modal-img">
+                                    <img src="../img/hair-style/slicked-back-rezent/3.webp"
+                                        alt="スリックバックリーゼント3 (Slicked-back Rezent 3)" class="modal-img">
+                                    <img src="../img/hair-style/slicked-back-rezent/4.webp"
+                                        alt="スリックバックリーゼント4 (Slicked-back Rezent 4)" class="modal-img">
+                                    <img src="../img/hair-style/slicked-back-rezent/5.webp"
+                                        alt="スリックバックリーゼント5 (Slicked-back Rezent 5)" class="modal-img">
+                                    <img src="../img/hair-style/slicked-back-rezent/6.webp"
+                                        alt="スリックバックリーゼント6 (Slicked-back Rezent 6)" class="modal-img">
+                                </div>
+                            </div>
+
+                            <div class="textured-photos" id="textured-style">
+                                <h4 class="style-name">- Textured Rezent -</h4>
+                                <div class="img-scroll">
+                                    <img src="../img/hair-style/textured-rezent/1.webp"
+                                        alt="テクスチャーリーゼント1 (Textured Rezent 1)" class="modal-img">
+                                    <img src="../img/hair-style/textured-rezent/2.webp"
+                                        alt="テクスチャーリーゼント2 (Textured Rezent 2)" class="modal-img">
+                                    <img src="../img/hair-style/textured-rezent/3.webp"
+                                        alt="テクスチャーリーゼント3 (Textured Rezent 3)" class="modal-img">
+                                    <img src="../img/hair-style/textured-rezent/4.webp"
+                                        alt="テクスチャーリーゼント4 (Textured Rezent 4)" class="modal-img">
+                                    <img src="../img/hair-style/textured-rezent/5.webp"
+                                        alt="テクスチャーリーゼント5 (Textured Rezent 5)" class="modal-img">
+                                    <img src="../img/hair-style/textured-rezent/6.webp"
+                                        alt="テクスチャーリーゼント6 (Textured Rezent 6)" class="modal-img">
+                                </div>
+                            </div>
+
+                            <div class="fade-photos" id="fade-style">
+                                <h4 class="style-name">- Fade Rezent -</h4>
+                                <div class="img-scroll">
+                                    <img src="../img/hair-style/fade-rezent/1.webp" alt="フェードリーゼント1 (Fade Rezent 1)"
+                                        class="modal-img">
+                                    <img src="../img/hair-style/fade-rezent/2.webp" alt="フェードリーゼント2 (Fade Rezent 2)"
+                                        class="modal-img">
+                                    <img src="../img/hair-style/fade-rezent/3.webp" alt="フェードリーゼント3 (Fade Rezent 3)"
+                                        class="modal-img">
+                                    <img src="../img/hair-style/fade-rezent/4.webp" alt="フェードリーゼント4 (Fade Rezent 4)"
+                                        class="modal-img">
+                                    <img src="../img/hair-style/fade-rezent/5.webp" alt="フェードリーゼント5 (Fade Rezent 5)"
+                                        class="modal-img">
+                                    <img src="../img/hair-style/fade-rezent/6.webp" alt="フェードリーゼント6 (Fade Rezent 6)"
+                                        class="modal-img">
+                                </div>
+                            </div>
+
+                            <div class="biker-photos" id="biker-style">
+                                <h4 class="style-name">- Biker-style Rezent -</h4>
+                                <div class="img-scroll">
+                                    <img src="../img/hair-style/biker-style-rezent/1.webp"
+                                        alt="バイカースタイルリーゼント1 (Biker-style Rezent 1)" class="modal-img">
+                                    <img src="../img/hair-style/biker-style-rezent/2.webp"
+                                        alt="バイカースタイルリーゼント2 (Biker-style Rezent 2)" class="modal-img">
+                                    <img src="../img/hair-style/biker-style-rezent/3.webp"
+                                        alt="バイカースタイルリーゼント3 (Biker-style Rezent 3)" class="modal-img">
+                                    <img src="../img/hair-style/biker-style-rezent/4.webp"
+                                        alt="バイカースタイルリーゼント4 (Biker-style Rezent 4)" class="modal-img">
+                                    <img src="../img/hair-style/biker-style-rezent/5.webp"
+                                        alt="バイカースタイルリーゼント5 (Biker-style Rezent 5)" class="modal-img">
+                                    <img src="../img/hair-style/biker-style-rezent/6.webp"
+                                        alt="バイカースタイルリーゼント6 (Biker-style Rezent 6)" class="modal-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <p>&copy; 2025 Back Alley 1950. All Rights Reserved.</p>
+            </footer>
+            <script src="../js/top.js"></script>
+            <script src="../js/style.js"></script>
+            <!-- 3dモデル用 -->
+            <script type="module" src="../js/import/import-comb.js"></script>
+            <script type="module">
+                import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

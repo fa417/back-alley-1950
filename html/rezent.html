@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezent</title>
+    <meta name="description" content="リーゼントの種類を紹介するページ。クラシックからモダンまで、さまざまなスタイルを取り扱い、あなたにぴったりのリーゼントを見つけられます。">
+    <link rel="icon" href="../img/hp/logo.webp" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+
+<body>
+    <!-- PC表示時(701px~)の背景＋左右レイアウト -->
+    <div class="pc-container">
+        <div class="pc-back">
+            <!-- 背景カラーオーバーレイを追加 -->
+            <div class="overlay"></div>
+        </div>
+
+        <!-- 画面三分割した場合 - 左画面 - -->
+        <div class="left-screen">
+            <div class="model-block">
+                <div id="pomade-red"></div>
+                <p class="hint">
+                    360° view — drag to rotate
+                </p>
+            </div>
+        </div>
+
+        <!-- 画面三分割した場合 - 右画面 - -->
+        <div class="right-screen">
+            <ul class="pc-side-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#concept">Concept</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="rezent.html">Rezent</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="style.html">Hair Style</a></li>
+                <li><a href="reservation.html#reservation">Reservation</a></li>
+                <li><a href="reservation.html#access">Access</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sp-layout">
+        <div class="sp-home">
+            <header class="rezent-detail">
+                <h1 class="header-name">Rezent</h1>
+                <label class="menu-button" for="menu-toggle">Menu</label>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <nav id="nav-menu">
+                    <!-- フォントカラー変更: 'bw'クラスはブルーホワイトカラーを適用 -->
+                    <div class="heading bw"><span class="change-color b">M</span>enu</div>
+                    <button class="close-menu" onclick="closeMenu()">&times;</button>
+                    <ul class="menu-items">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#concept">Concept</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="rezent.html">Rezent</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="style.html">Hair Style</a></li>
+                        <li><a href="reservation.html#reservation">Reservation</a></li>
+                        <li><a href="reservation.html#access">Access</a></li>
+                    </ul>
+                    <img src="../img/hp/illustration-white.webp" alt="リーゼントのイラスト">
+                    <div class="double"></div>
+                    <div class="double-line-secondary"></div>
+                </nav>
+            </header>
+
+            <section class="about-section" id="rezent">
+                <div class="container">
+                    <!-- フォントカラー変更: 'br'クラスはブルーレッドカラーを適用 -->
+                    <h2 class="section-title br"><span class="change-color b">R</span>ezent</h2>
+                    <p class="section-sub r">- リーゼント -</p>
+
+                    <div class="wrapper">
+                        <p>リーゼントにはいくつかのスタイルがあり、それぞれが異なる魅力を持っています。どのスタイルも、時代や個人の個性を反映した特別な髪型です。ここでは、代表的なリーゼントの種類をご紹介します。
+                        </p>
+                    </div>
+                    <div class="scroll">
+                        <p>scroll</p>
+                        <div class="arrow1"></div>
+                        <div class="arrow2"></div>
+                    </div>
+                </div>
+            </section>
+            <main>
+                <section class="types-section">
+                    <div class="container">
+
+                        <article>
+                            <div class="back-blue">
+                                <!-- 背景テクスチャ―を追加 -->
+                                <div class="texture"></div>
+                                <img src="../img/menu/modern-rezent/top.webp" alt="モダンリーゼント (Modern Rezent)"
+                                    class="style-left modern">
+
+
+                                <div class="description">
+                                    <h3 class="description-title">Modern Rezent</h3>
+                                    <h4 class="subtitle">- モダンリーゼント -</h4>
+
+                                    <!-- SP用紹介文 -->
+                                    <p class="sp-screen-text">
+                                        洗練された現代風リーゼント。クラシックな形にトレンドを加え、ツヤ仕上げもラフ仕上げも自在。ビジネスにもカジュアルにもマッチ。
+                                    </p>
+                                    <!-- 379px以上紹介文 -->
+                                    <p class="wide-screen-text">
+                                        洗練された現代風のモダンリーゼントは、クラシックなスタイルにトレンドを加えた髪型。ツヤ仕上げもラフ仕上げも自在で、ビジネスにもカジュアルにもぴったりマッチします。シンプルでありながら、どんなシーンにも適応できる万能なスタイルです。
+                                    </p>
+
+                                    <div class="links-list">
+                                        <a href="menu.html#menu" class="menu-style-link">View Menu</a>
+                                        <a href="style.html#modern-style" class="hair-style-link">View HairStyle</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="back-red">
+                                <!-- 背景テクスチャ―を追加 -->
+                                <div class="texture"></div>
+
+                                <img src="../img/menu/classic-rezent/top.webp" alt="クラシックリーゼント (Classic Rezent)"
+                                    class="style-right classic">
+
+                                <div class="description">
+                                    <h3 class="description-title">Classic Rezent</h3>
+                                    <h4 class="subtitle">- クラシックリーゼント -</h4>
+
+                                    <!-- SP用紹介文 -->
+                                    <p class="sp-screen-text">1950年代の王道リーゼント。刈り上げ×ボリュームで力強く、グリース仕上げで映画スターのような存在感を演出。</p>
+                                    <!-- 379px以上紹介文 -->
+                                    <p class="wide-screen-text">
+                                        1950年代の王道スタイル。刈り上げとボリュームを組み合わせ、力強さを感じさせる仕上がりに。グリースでスタイリングすることで、まるで映画スターのような存在感を放ちます。クラシックでありながら、力強さと洗練された雰囲気を両立させたスタイルです。
+                                    </p>
+
+                                    <div class="links-list">
+                                        <a href="menu.html#menu" class="menu-style-link">View Menu</a>
+                                        <a href="style.htm#classic-style" class="hair-style-link">View HairStyle</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="back-blue">
+                                <!-- 背景テクスチャ―を追加 -->
+                                <div class="texture"></div>
+
+                                <img src="../img/menu/short-rezent/top.webp" alt="ショートリーゼント (Short Rezent)"
+                                    class="style-left short">
+
+                                <div class="description">
+                                    <h3 class="description-title">Short Rezent</h3>
+                                    <h4 class="subtitle">- ショートリーゼント -</h4>
+
+                                    <!-- SP用紹介文 -->
+                                    <p class="sp-screen-text">短めトップ×刈り上げで清潔感のある軽やかリーゼント。ビジネスにも最適、初心者にもおすすめ。</p>
+                                    <!-- 379px以上紹介文 -->
+                                    <p class="wide-screen-text">
+                                        短めのトップと刈り上げを組み合わせ、清潔感と軽やかさを感じさせるスタイル。ビジネスシーンにもぴったりで、スタイリングが簡単なため初心者にもおすすめです。シンプルでありながら、洗練された印象を与えるヘアスタイルです。
+                                    </p>
+
+                                    <div class="links-list">
+                                        <a href="menu.html#menu" class="menu-style-link">View Menu</a>
+                                        <a href="style.htm#short-style" class="hair-style-link">View HairStyle</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="back-red">
+                                <!-- 背景テクスチャ―を追加 -->
+                                <div class="texture"></div>
+
+                                <img src="../img/menu/slicked-back-rezent/top.webp"
+                                    alt="スリックバックリーゼント (Slicked-back Rezent)" class="style-right slicked-back">
+
+                                <div class="description">
+                                    <h3 class="description-title">Slicked-back Rezent</h3>
+                                    <h4 class="subtitle">- スリックバックリーゼント -</h4>
+
+                                    <!-- SP用紹介文 -->
+                                    <p class="sp-screen-text">後ろ流しのタイトなシルエットで、大人の色気漂う洗練リーゼント。スーツにも好相性。</p>
+                                    <!-- 379px以上紹介文 -->
+                                    <p class="wide-screen-text">
+                                        後ろに流すタイトなシルエットで、大人の色気と洗練された印象を演出。スーツとも相性が良く、フォーマルなシーンでも映えるスタイルです。シンプルでありながら、落ち着いた魅力を引き立てるヘアスタイルです。
+                                    </p>
+
+                                    <div class="links-list">
+                                        <a href="menu.html#menu" class="menu-style-link">View Menu</a>
+                                        <a href="style.htm#slicked-style" class="hair-style-link">View HairStyle</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="back-blue">
+                                <!-- 背景テクスチャ―を追加 -->
+                                <div class="texture"></div>
+
+                                <img src="../img/menu/textured-rezent/top.webp" alt="テクスチャーリーゼント (Textured Rezent)"
+                                    class="style-left textured">
+
+                                <div class="description">
+                                    <h3 class="description-title">Textured Rezent</h3>
+                                    <h4 class="subtitle">- テクスチャ―リーゼント -</h4>
+
+                                    <!-- SP用紹介文 -->
+                                    <p class="sp-screen-text">無造作な毛流れが魅力のカジュアルリーゼント。ドライ仕上げやパーマでラフにキマる。</p>
+                                    <!-- 379px以上紹介文 -->
+                                    <p class="wide-screen-text">
+                                        無造作な毛流れが魅力のカジュアルスタイル。ドライ仕上げやパーマでラフに決まり、自然な動きが特徴です。手軽にスタイリングでき、日常的にも活躍するリラックスした印象を与えます。
+                                    </p>
+
+                                    <div class="links-list">
+                                        <a href="menu.html#menu" class="menu-style-link">View Menu</a>
+                                        <a href="style.htm#textured-style" class="hair-style-link">View HairStyle</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="back-red">
+                                <!-- 背景テクスチャ―を追加 -->
+                                <div class="texture"></div>
+
+                                <img src="../img/menu/fade-rezent/top.webp" alt="フェードリーゼント (Fade Rezent)"
+                                    class="style-right fade">
+
+                                <div class="description">
+                                    <h3 class="description-title">Fade Rezent</h3>
+                                    <h4 class="subtitle">- フェードリーゼント -</h4>
+
+                                    <!-- SP用紹介文 -->
+                                    <p class="sp-screen-text">フェードカットで魅せる現代リーゼント。クラシックにトレンドをプラス。</p>
+                                    <!-- 379px以上紹介文 -->
+                                    <p class="wide-screen-text">
+                                        フェードカットを取り入れた現代的なリーゼントスタイル。クラシックなリーゼントの魅力にトレンドをプラスし、シャープで洗練された印象を与えます。スタイリッシュでありながら、どこか懐かしさを感じさせる魅力的なヘアスタイルです。
+                                    </p>
+
+                                    <div class="links-list">
+                                        <a href="menu.html#menu" class="menu-style-link">View Menu</a>
+                                        <a href="style.htm#fade-style" class="hair-style-link">View HairStyle</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="back-blue">
+                                <!-- 背景テクスチャ―を追加 -->
+                                <div class="texture"></div>
+
+                                <img src="../img/menu/biker-style-rezent/top.webp"
+                                    alt="バイカースタイルリーゼント (Biker-style Rezent)" class="style-left biker">
+
+                                <div class="description">
+                                    <h3 class="description-title">Biker-style Rezent</h3>
+                                    <h4 class="subtitle">- バイカースタイルリーゼント -</h4>
+                                    <!-- SP用紹介文 -->
+                                    <p class="sp-screen-text">短めトップでラフにキマるバイカースタイル。無骨さと清潔感を両立。</p>
+                                    <!-- 379px以上紹介文 -->
+                                    <p class="wide-screen-text">
+                                        短めのトップとラフな仕上がりが特徴のバイカースタイルリーゼント。無骨さと洗練された雰囲気を兼ね備え、自由なスタイルながらも清潔感をキープ。バイクに乗る時にもぴったりな、男らしさを引き立てる髪型です。
+                                    </p>
+
+                                    <div class="links-list">
+                                        <a href="menu.html#menu" class="menu-style-link">View Menu</a>
+                                        <a href="style.htm#biker-style" class="hair-style-link">View HairStyle</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+            </main>
+            <footer>
+                <p>&copy; 2025 Back Alley 1950. All Rights Reserved.</p>
+            </footer>
+            <script src="../js/top.js"></script>
+            <!-- 3dモデル用 -->
+            <script type="module" src="../js/import/import-pomade-red.js"></script>
+            <script type="module">
+                import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

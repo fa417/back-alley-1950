@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <meta name="description" content="リーゼントのスタイルメニュー。気になるスタイルを選んで詳細をチェック。">
+    <link rel="icon" href="../img/hp/logo.webp" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/"
+    }
+  }
+</script>
+</head>
+
+<body>
+    <!-- PC表示時(701px~)の背景＋左右レイアウト -->
+    <div class="pc-container">
+        <div class="menu-hair-back">
+            <!-- 背景カラーオーバーレイを追加 -->
+            <div class="overlay"></div>
+        </div>
+
+        <!-- 画面三分割した場合 - 左画面 - -->
+        <div class="left-screen">
+            <div class="model-block">
+                <div id="scissors"></div>
+                <p class="hint">
+                    360° view — drag to rotate
+                </p>
+            </div>
+        </div>
+
+        <!-- 画面三分割した場合 - 右画面 - -->
+        <div class="right-screen">
+            <ul class="pc-side-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#concept">Concept</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="rezent.html">Rezent</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="style.html">Hair Style</a></li>
+                <li><a href="reservation.html#reservation">Reservation</a></li>
+                <li><a href="reservation.html#access">Access</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sp-layout">
+        <div class="sp-home">
+            <header class="menu-detail">
+                <h1 class="header-name">Menu</h1>
+                <label class="menu-button" for="menu-toggle">Menu</label>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <nav id="nav-menu">
+                    <!-- フォントカラー変更: 'bw'クラスはブルーホワイトカラーを適用 -->
+                    <div class="heading bw"><span class="change-color b">M</span>enu</div>
+                    <button class="close-menu" onclick="closeMenu()">&times;</button>
+                    <ul class="menu-items">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#concept">Concept</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="rezent.html">Rezent</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="style.html">Hair Style</a></li>
+                        <li><a href="reservation.html#reservation">Reservation</a></li>
+                        <li><a href="reservation.html#access">Access</a></li>
+                    </ul>
+                    <img src="../img/hp/illustration-white.webp" alt="リーゼントのイラスト">
+                    <div class="double"></div>
+                    <div class="double-line-secondary"></div>
+                </nav>
+            </header>
+
+            <main>
+                <section class="menu-hair-section" id="menu">
+                    <div class="container">
+                        <!-- フォントカラー変更: 'br'クラスはブルーレッドカラーを適用 -->
+                        <h2 class="section-title br"><span class="change-color b">M</span>enu</h2>
+                        <p class="section-sub r">- メニュー -</p>
+
+                        <div class="menu-hair">
+
+                            <div class="area-blue">
+                                <div class="entry-blue">
+                                    <h3 class="description-title">Modern Rezent</h3>
+                                    <h4 class="subtitle">- モダンリーゼント -</h4>
+                                </div>
+                                <div class="entry-content">
+                                    <p>カット＋カラー＋ヘアセット</p>
+                                    <span class="fee">10,000円</span>
+                                </div>
+                            </div>
+
+                            <div class="area-red">
+                                <div class="entry-red">
+                                    <h3 class="description-title">Classic Rezent</h3>
+                                    <h4 class="subtitle">- クラシックリーゼント -</h4>
+                                </div>
+                                <div class="entry-content">
+                                    <p>カット＋カラー＋ヘアセット</p>
+                                    <span class="fee">9,500円</span>
+                                </div>
+                            </div>
+
+                            <div class="area-blue">
+                                <div class="entry-blue">
+                                    <h3 class="description-title">Short Rezent</h3>
+                                    <h4 class="subtitle">- ショートリーゼント -</h4>
+                                </div>
+                                <div class="entry-content">
+                                    <p>カット＋カラー＋ヘアセット</p>
+                                    <span class="fee">9,000円</span>
+                                </div>
+                            </div>
+
+                            <div class="area-red">
+                                <div class="entry-red">
+                                    <h3 class="description-title">Slicked-back Rezent</h3>
+                                    <h4 class="subtitle">- スリックバックリーゼント -</h4>
+                                </div>
+                                <div class="entry-content">
+                                    <p>カット＋カラー＋ヘアセット</p>
+                                    <span class="fee">9,500円</span>
+                                </div>
+                            </div>
+
+                            <div class="area-blue">
+                                <div class="entry-blue">
+                                    <h3 class="description-title">Textured Rezent</h3>
+                                    <h4 class="subtitle">- テクスチャ―リーゼント -</h4>
+                                </div>
+                                <div class="entry-content">
+                                    <p>カット＋カラー＋ヘアセット</p>
+                                    <span class="fee">10,500円</span>
+                                </div>
+                            </div>
+
+                            <div class="area-red">
+                                <div class="entry-red">
+                                    <h3 class="description-title">Fade Rezent</h3>
+                                    <h4 class="subtitle">- フェードリーゼント -</h4>
+                                </div>
+                                <div class="entry-content">
+                                    <p>カット＋カラー＋ヘアセット</p>
+                                    <span class="fee">11,000円</span>
+                                </div>
+                            </div>
+
+                            <div class="area-blue">
+                                <div class="entry-blue">
+                                    <h3 class="description-title">Biker-style Rezent</h3>
+                                    <h4 class="subtitle">- バイカースタイルリーゼント -</h4>
+                                </div>
+                                <div class="entry-content">
+                                    <p>カット＋カラー＋ヘアセット</p>
+                                    <span class="fee">10,500円</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="menu-border-decoration">
+                    <div class="menu-border-separator"></div>
+                </section>
+
+                <section class="menu-option-section">
+                    <div class="container">
+                        <!-- 背景カラーオーバーレイを追加 -->
+                        <div class="overlay"></div>
+                        <!-- フォントカラー変更: 'ww'クラスはホワイトカラーを適用 -->
+                        <h2 class="section-title ww">Option</h2>
+                        <p class="section-sub w">- オプション -</p>
+
+                        <div class="menu-option">
+                            <div class="price-table">
+                                <h5 class="table-title">Cut<span class="table-sub">- カット -</span></h5>
+                                <span class="fee">3,000円</span>
+                            </div>
+                            <div class="price-table">
+                                <h5 class="table-title">Color<span class="table-sub">- カラー -</span></h5>
+                                <span class="fee">4,500円</span>
+                            </div>
+                            <div class="price-table">
+                                <h5 class="table-title">Perm<span class="table-sub">- パーマ -</span></h5>
+                                <span class="fee">5,000円</span>
+                            </div>
+                            <div class="price-table">
+                                <h5 class="table-title">Beard Shaving<span class="table-sub">- 髭剃り -</span></h5>
+                                <span class="fee">2,500円</span>
+                            </div>
+                            <div class="price-table">
+                                <h5 class="table-title">Face Shaving<span class="table-sub">- 顔そり -</span></h5>
+                                <span class="fee">3,000円</span>
+                            </div>
+                            <div class="price-table">
+                                <h5 class="table-title">Hair Set<span class="table-sub">- ヘアセット -</span></h5>
+                                <span class="fee">2,500円</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <p>&copy; 2025 Back Alley 1950. All Rights Reserved.</p>
+            </footer>
+            <script src="../js/top.js"></script>
+            <!-- 3dモデル用 -->
+            <script type="module" src="../js/import/import-scissors.js"></script>
+            <script type="module">
+                import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Alley 1950 ー リーゼント専門理容室 ー</title>
+    <meta name="description" content="リーゼント専門理容室。経験豊富なスタッフによるカスタマイズカットで、あなただけのリーゼントスタイルを提供します。">
+    <link rel="icon" href="./img/hp/logo.webp" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+
+<body>
+    <!-- PC表示時(701px~)の背景＋左右レイアウト -->
+    <div class="pc-container">
+        <div class="pc-back">
+            <!-- 背景カラーオーバーレイを追加 -->
+            <div class="overlay"></div>
+        </div>
+
+        <!-- 画面三分割した場合 - 左画面 - -->
+        <div class="left-screen">
+            <div class="model-block">
+                <div id="pomade-red"></div>
+                <p class="hint">
+                    360° view — drag to rotate
+                </p>
+            </div>
+        </div>
+
+        <!-- 画面三分割した場合 - 右画面 - -->
+        <div class="right-screen">
+            <ul class="pc-side-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#concept">Concept</a></li>
+                <li><a href="./html/news.html">News</a></li>
+                <li><a href="./html/rezent.html">Rezent</a></li>
+                <li><a href="./html/menu.html">Menu</a></li>
+                <li><a href="./html/style.html">Hair Style</a></li>
+                <li><a href="./html/reservation.html#reservation">Reservation</a></li>
+                <li><a href="./html/reservation.html#access">Access</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sp-layout">
+        <div class="sp-home">
+            <header class="header">
+                <h1 class="site-name">
+                    <span class="name">Back Alley</span>
+                    <span class="name-number">1950</span>
+                    <span class="name-sub">- リーゼント専門理容室 -</span>
+                </h1>
+
+                <label class="menu-button" for="menu-toggle">Menu</label>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <nav id="nav-menu">
+                    <!-- フォントカラー変更: 'bw'クラスはブルーホワイトカラーを適用 -->
+                    <div class="heading bw"><span class="change-color b">M</span>enu</div>
+                    <button class="close-menu" onclick="closeMenu()">&times;</button>
+                    <ul class="menu-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#concept">Concept</a></li>
+                        <li><a href="./html/news.html">News</a></li>
+                        <li><a href="./html/rezent.html">Rezent</a></li>
+                        <li><a href="./html/menu.html">Menu</a></li>
+                        <li><a href="./html/style.html">Hair Style</a></li>
+                        <li><a href="./html/reservation.html#reservation">Reservation</a></li>
+                        <li><a href="./html/reservation.html#access">Access</a></li>
+                    </ul>
+                    <img src="./img/hp/illustration-white.webp" alt="リーゼントのイラスト">
+                    <div class="double"></div>
+                    <div class="double-line-secondary"></div>
+                </nav>
+
+            </header>
+
+            <section class="main-section" id="home">
+                <div class="container">
+                    <div class="title-container from-down">
+
+                        <!-- 背景カラーオーバーレイを追加 -->
+                        <div class="overlay"></div>
+                        <h2 class="main-title">
+                            <span class="title">Back Alley</span><span class="title-number">1950</span>
+                        </h2>
+                        <span class="title-sub">- リーゼント専門理容室 -</span>
+
+                    </div>
+
+                    <div class="loop-text">
+                        <p>Welcome to Back Alley <span class="number">1950</span></p>
+                        <p>Welcome to Back Alley <span class="number">1950</span></p>
+                        <p>Welcome to Back Alley <span class="number">1950</span></p>
+                    </div>
+                </div>
+            </section>
+            <main>
+                <section class="concept-section" id="concept">
+                    <div class="container">
+                        <!-- 背景カラーオーバーレイを追加 -->
+                        <div class="overlay"></div>
+                        <!-- フォントカラー変更: 'rw'クラスはレッドホワイトカラーを適用 -->
+                        <h3 class="section-title rw"><span class="change-color r">C</span>oncept</h3>
+                        <p class="section-sub w">- コンセプト -</p>
+
+                        <div class="wrapper">
+                            <p>他店では叶えられない<br>\ あなただけの /</p>
+                            <h4 class="highlight-title">リーゼントスタイルを。</h4>
+                            <p>当店ならではの技術で、<br>特別な髪型を実現し、<br>レトロな雰囲気に包まれながら<br>新しい自分に出会いましょう。</p>
+                        </div>
+
+                        <div class="loop-news">
+                            <div class="inner">
+                                <article>
+                                    <a href="./html/news.html" class="active-link">
+                                        <div class="picture">
+                                            <img src="./img/hp/news1.webp" alt="新ヘアスタイル：フェードリーゼント">
+                                        </div>
+                                        <div class="text">
+                                            <h6 class="inner-title">新メニュー追加</h6>
+                                            <p>2050.03.03</p>
+                                        </div>
+                                    </a>
+                                </article>
+
+                                <article>
+                                    <a href="./html/news.html" class="active-link">
+                                        <div class="picture">
+                                            <img src="./img/hp/news3.webp" alt="お正月画像">
+                                        </div>
+                                        <div class="text">
+                                            <h6 class="inner-title">新年のご挨拶</h6>
+                                            <p>2050.01.01</p>
+                                        </div>
+                                    </a>
+                                </article>
+
+                                <article>
+                                    <a href="./html/news.html" class="active-link">
+                                        <div class="picture">
+                                            <img src="./img/hp/news2.webp" alt="店内写真">
+                                        </div>
+                                        <div class="text">
+                                            <h6 class="inner-title">営業時間変更</h6>
+                                            <p>2049.09.25</p>
+                                        </div>
+                                    </a>
+                                </article>
+
+                                <article>
+                                    <a href="./html/news.html" class="active-link">
+                                        <div class="picture">
+                                            <img src="./img/hp/news1.webp" alt="新ヘアスタイル：フェードリーゼント">
+                                        </div>
+                                        <div class="text">
+                                            <h6 class="inner-title">新メニュー追加</h6>
+                                            <p>2050.03.03</p>
+                                        </div>
+                                    </a>
+                                </article>
+
+                                <article>
+                                    <a href="./html/news.html" class="active-link">
+                                        <div class="picture">
+                                            <img src="./img/hp/news3.webp" alt="お正月画像">
+                                        </div>
+                                        <div class="text">
+                                            <h6 class="inner-title">新年のご挨拶</h6>
+                                            <p>2050.01.01</p>
+                                        </div>
+                                    </a>
+                                </article>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="rezent-section">
+                    <div class="container">
+
+                        <!-- フォントカラー変更: 'rw'クラスはレッドホワイトカラーを適用 -->
+                        <h3 class="section-title rb"><span class="change-color r">R</span>ezent</h3>
+                        <p class="section-sub b">- リーゼント -</p>
+
+                        <div class="wrapper">
+                            <p>リーゼントは1950年代のロックンロール文化から生まれ、エルヴィス・プレスリーやジェームス・ディーンが広めました。日本ではツッパリ文化の象徴として定着し、昭和の不良やバイク文化で人気に。現在もモダンレトロなスタイルとして、Rezentのように現代的にアレンジされて親しまれています。
+                            </p>
+                            <a href="./html/rezent.html" class="detail-link">READ MORE</a>
+                        </div>
+
+                        <div class="loop-img">
+                            <figure>
+                                <img src="./img/menu/modern-rezent/top.webp" alt="モダンリーゼント (Modern Rezent)"
+                                    class="loop-rezent">
+                                <img src="./img/menu/classic-rezent/top.webp" alt="クラシックリーゼント (Classic Rezent)"
+                                    class="loop-rezent">
+                                <img src="./img/menu/short-rezent/top.webp" alt="ショートリーゼント (Short Rezent)"
+                                    class="loop-rezent">
+                                <img src="./img/menu/slicked-back-rezent/top.webp"
+                                    alt="スリックバックリーゼント (Slicked-back Rezent)" class="loop-rezent">
+                                <img src="./img/menu/textured-rezent/top.webp" alt="テクスチャ-リーゼント (Textured Rezent)"
+                                    class="loop-rezent">
+                                <img src="./img/menu/fade-rezent/top.webp" alt="フェードリーゼント(Fade Rezent)"
+                                    class="loop-rezent">
+                                <img src="./img/menu/biker-style-rezent/top.webp"
+                                    alt="バイカースタイルリーゼント (Biker-style Rezent)" class="loop-rezent">
+
+                                <img src="./img/menu/modern-rezent/top.webp" alt="モダンリーゼント (Modern Rezent)"
+                                    class="loop-rezent">
+                                <img src="./img/menu/classic-rezent/top.webp" alt="クラシックリーゼント (Classic Rezent)"
+                                    class="loop-rezent">
+                                <img src="./img/menu/short-rezent/top.webp" alt="ショートリーゼント (Short Rezent)"
+                                    class="loop-rezent">
+                                <img src="./img/menu/slicked-back-rezent/top.webp"
+                                    alt="スリックバックリーゼント (Slicked-back Rezent)" class="loop-rezent">
+                                <img src="./img/menu/textured-rezent/top.webp" alt="テクスチャ-リーゼント (Textured Rezent)"
+                                    class="loop-rezent">
+                                <img src="./img/menu/fade-rezent/top.webp" alt="フェードリーゼント (Fade Rezent)"
+                                    class="loop-rezent">
+                                <img src="./img/menu/biker-style-rezent/top.webp"
+                                    alt="バイカースタイルリーゼント (Biker-style Rezent)" class="loop-rezent">
+
+                            </figure>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="menu-section">
+                    <div class="container">
+                        <!-- 背景テクスチャ―を追加 -->
+                        <div class="texture"></div>
+                        <!-- フォントカラー変更: 'bw'クラスはブルーホワイトカラーを適用 -->
+                        <h3 class="section-title bw"><span class="change-color b">M</span>enu</h3>
+                        <p class="section-sub w">- メニュー -</p>
+
+                        <div class="wrapper">
+                            <h5 class="lead"><span class="first">あなたにぴったりの</span><br>
+                                <span class="second">ヘアスタイルを。</span>
+                            </h5>
+                            <p>リーゼントはもちろん、<br>シンプルで上品なスタイルまで。</p>
+                            <p>カット・セット・パーマ・シェービングなど<br>あなたの魅力を引き出す施術を提案します。</p>
+
+                            <a href="./html/menu.html" class="detail-link">READ MORE</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="style-hair-section">
+                    <div class="container">
+                        <!-- 背景テクスチャ―を追加 -->
+                        <div class="texture"></div>
+                        <!-- フォントカラー変更: 'bw'クラスはブルーホワイトカラーを適用 -->
+                        <h3 class="section-title rw"><span class="change-color r">H</span>air Style</h3>
+                        <p class="section-sub w">- へアスタイル -</p>
+
+                        <div class="wrapper">
+                            <h5 class="lead"><span class="first">理想のスタイルを</span><br>
+                                <span class="second">見つけよう。</span>
+                            </h5>
+                            <p>クラシックからモダンまで、<br>多彩なリーゼントスタイルをラインナップ。</p>
+                            <p>あなたにぴったりのヘアを見つけて、<br>こだわりのセットで魅力を引き出します。</p>
+                            <a href="./html/style.html" class="detail-link">READ MORE</a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <p>&copy; 2025 Back Alley 1950. All Rights Reserved.</p>
+            </footer>
+
+            <script src="./js/top.js"></script>
+            <!-- 3dモデル用 -->
+            <script type="module" src="./js/import/import-pomade-red.js"></script>
+            <script type="module">
+                import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+            </script>
+        </div>
+
+    </div>
+</body>
+
+</html>

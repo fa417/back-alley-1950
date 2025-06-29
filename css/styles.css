@@ -1,0 +1,822 @@
+@charset "UTF-8";
+
+/* カラー */
+:root {
+    --red-color: #b22222;
+    --blue-color: #1c1c3b;
+    --white-color: #f5f5f5;
+    --black-color: #121212;
+}
+
+/*  */
+
+/* 全体 */
+body,
+.sp-home{
+    background: var(--white-color);
+}
+
+/*  */
+
+/* 共通 */
+.title-container,
+.types-section .back-blue,
+.types-section .back-red{
+    opacity: 0;
+   
+}
+
+.concept-section .wrapper,
+.rezent-section .wrapper,
+.menu-section .wrapper,
+.style-hair-section .wrapper,
+.about-section .wrapper,
+.modern-photos,
+.classic-photos,
+.short-photos,
+.slicked-photos,
+.textured-photos,
+.fade-photos,
+.biker-photos,
+.menu-hair-section .container,
+.menu-option-section .container,
+.reservation-section .container,
+.access-section .container,
+.thank-section .container{
+    opacity: 0;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes centerUp {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.title-container.visible,
+.types-section .back-blue.visible,
+.types-section .back-red.visible{
+    animation: slideUp 2s forwards;
+}
+
+.concept-section .wrapper.visible,
+.rezent-section .wrapper.visible,
+.menu-section .wrapper.visible,
+.style-hair-section .wrapper.visible,
+.about-section .wrapper.visible,
+.modern-photos.visible,
+.classic-photos.visible,
+.short-photos.visible,
+.slicked-photos.visible,
+.textured-photos.visible,
+.fade-photos.visible,
+.biker-photos.visible,
+.menu-hair-section .container.visible,
+.menu-option-section .container.visible,
+.reservation-section .container.visible,
+.access-section .container.visible,
+.thank-section .container.visible{
+    animation: centerUp 2s forwards;
+}
+
+/*  */
+
+/* メインセクション */
+header {
+    background: var(--white-color);
+}
+
+.main-section .container{
+    background-color: var(--white-color);
+}
+
+.main-title,
+.title-sub {
+    position: relative;
+    z-index: 1;
+}
+
+.title-sub {
+    transform: translateY(-10px);
+}
+
+ .title-container::before {
+    content: "";
+    background-image: url(../img/hp/pomade-3d.webp);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    background-size: 60%;
+    transform: rotate(-20deg);
+}
+
+.main-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgba(254, 254, 254, .5);
+}
+
+#nav-menu {
+    background: var(--red-color);
+}
+
+.menu-items a {
+    position: relative;
+}
+
+.menu-items a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--white-color);
+    transition: all 300ms ease;
+}
+
+.menu-items a:hover::after {
+    width: 0;
+    opacity: 0;
+    transform: translateY(3px);
+}
+
+#nav-menu img {
+    position: absolute;
+    right: 4%;
+    top: 75%;
+    transform: translateY(-50%);
+    width: 20%;
+    z-index: 1;
+}
+
+header .double::before {
+    content: "";
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: var(--white-color);
+    z-index: 2;
+}
+
+header .double-line-secondary::before {
+    content: "";
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: var(--white-color);
+    z-index: 2;
+}
+
+.close-menu:hover {
+    color: var(--red-color);
+}
+
+.loop-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    background: var(--blue-color);
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    bottom: 15%;
+}
+
+.loop-text p {
+    animation: scrollText 30s linear infinite;
+    margin-right: 30px;
+    white-space: nowrap;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/*  */
+
+/* コンセプトセクション */
+.concept-section .container::before {
+    content: '';
+    background-image: url(../img/hp/concept-back.webp);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.concept-section .section-title,
+.consept-section .wrapper,
+.consept-section .loop-news,
+.about-section .section-title {
+    position: relative;
+    z-index: 1;
+}
+
+.concept-section .overlay,
+.menu-option-section .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(18, 18, 18, .5);
+    z-index: -1;
+}
+
+.loop-news {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    background: var(--white-color);
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 5%;
+    padding: 5px 0;
+}
+
+.inner {
+    display: flex;
+    gap: 100px;
+    animation: scrollNews 30s linear infinite;
+    width: max-content;
+}
+
+@keyframes scrollNews {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.active-link {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.inner .text {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.picture {
+    width: 65%;
+}
+
+.picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/*  */
+
+/* リーゼントセクション */
+.rezent-section .container,
+.menu-section .container,
+.style-hair-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.rezent-section .container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/hp/texture.webp);
+    background-color: rgba(178, 34, 34, 1);
+    /* 深赤 */
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: right;
+    z-index: -2;
+}
+
+.rezent-section .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--white-color);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+    z-index: -1;
+}
+
+.rezent-section .detail-link:hover,
+.style-hair-section .detail-link:hover,
+.back-blue .menu-style-link:hover,
+.back-blue .hair-style-link:hover,
+.reservation-section .send:hover,
+.thankyou-box a:first-of-type:hover,
+.thankyou-box a:last-of-type:hover {
+    background: linear-gradient(45deg, var(--red-color), var(--blue-color));
+}
+
+.rezent-section .detail-link:active,
+.style-hair-section .detail-link:active,
+.back-blue .menu-style-link:active,
+.back-blue .hair-style-link:active,
+.reservation-section .send:active,
+.thankyou-box a:first-of-type:active,
+.thankyou-box a:last-of-type:active {
+    background: linear-gradient(45deg, var(--blue-color), var(--red-color));
+    transform: scale(0.95);
+    box-shadow: 0 0 0 5px rgba(18, 18, 18, .3);
+}
+
+.loop-img {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    background: var(--white-color);
+}
+
+.loop-img figure {
+    display: flex;
+    gap: 10px;
+    width: max-content;
+    animation: loop-scroll 30s linear infinite;
+}
+
+.loop-img img {
+    width: auto;
+    height: 80px;
+    object-fit: contain;
+}
+
+@keyframes loop-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/*  */
+
+/* メニューセクション */
+.menu-section .texture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/hp/texture.webp);
+    background-size: cover;
+    background-position: right;
+    background-color: rgba(178, 34, 34, 1);
+    background-blend-mode: soft-light;
+    z-index: -1;
+    clip-path: polygon(0% 0%,
+            100% 0%,
+            100% 90%,
+            0% 100%);
+}
+
+.menu-section .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--red-color);
+    z-index: -2;
+    clip-path: polygon(0% 0%,
+            100% 0%,
+            100% 90%,
+            0% 100%);
+}
+
+.menu-section .container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/hp/texture.webp);
+    background-color: rgba(28, 28, 59, 1);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: right;
+    z-index: -3;
+}
+
+.menu-section .detail-link:hover,
+.back-red .menu-style-link:hover,
+.back-red .hair-style-link:hover {
+    background: linear-gradient(45deg, var(--blue-color), var(--red-color));
+}
+
+.menu-section .detail-link:active,
+.back-red .menu-style-link:active,
+.back-red .hair-style-link:active {
+    background: linear-gradient(45deg, var(--red-color), var(--blue-color));
+    transform: scale(0.95);
+    box-shadow: 0 0 0 5px rgba(18, 18, 18, .3);
+}
+
+.arrow {
+    display: block;
+    width: 0;
+    height: 0;
+    margin: 10px auto;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid var(--black-color);
+}
+
+/*  */
+
+/* メニューボーダーセパレート */
+.menu-border-separator,
+.border-separator {
+    border: 1px solid var(--blue-color);
+    height: 1px;
+    margin: auto;
+    width: 90%;
+}
+
+/*  */
+
+/* スタイルヘアセクション */
+.style-hair-section .texture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/hp/texture.webp);
+    background-size: cover;
+    background-position: right;
+    background-color: rgba(28, 28, 59, 1);
+    background-blend-mode: soft-light;
+    z-index: -1;
+
+}
+
+.style-hair-section .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--blue-color);
+    z-index: -2;
+}
+
+/*  */
+
+/* リーゼントアバウト */
+.booking-info-detail,
+.news-detail,
+.reservation-complete-detail {
+    background: var(--blue-color);
+}
+
+/*  */
+
+
+/* アバウトセクション */
+.about-section .border {
+    position: relative;
+}
+
+.about-section .border::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height: 1px;
+    background-color: var(--black-color);
+    margin-top: 5px;
+}
+
+.arrow1 {
+    line-height: 1;
+    width: .5em;
+    height: .5em;
+    border: 0.1em solid var(--red-color);
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateY(-25%) rotate(135deg);
+    animation: blinking 3s infinite;
+    margin-top: 5px;
+}
+
+.arrow2 {
+    line-height: 1;
+    width: .5em;
+    height: .5em;
+    border: 0.1em solid var(--blue-color);
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateY(-25%) rotate(135deg);
+    animation: blinking 3s infinite;
+    margin-top: 5px;
+}
+
+@keyframes blinking {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+        border-top-color: transparent;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*  */
+
+/* タイプセクション */
+.back-blue {
+    background: var(--blue-color);
+    clip-path: polygon(0% 5%,
+            100% 0%,
+            100% 95%,
+            0% 100%);
+}
+
+.back-blue .texture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/hp/texture.webp);
+    background-size: cover;
+    background-position: right;
+    background-color: rgba(28,28,59,1);
+    background-blend-mode: soft-light;
+    z-index: -1;
+}
+
+.back-red {
+    background: var(--red-color);
+    clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+}
+
+.back-red .texture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/hp/texture.webp);
+    background-size: cover;
+    background-position: right;
+    background-color: rgba(178, 34, 34, 1);
+    background-blend-mode: soft-light;
+    z-index: -1;
+}
+
+/*  */
+
+/* メニュー */
+.menu-detail,
+.rezent-detail,
+.type-photos-detail {
+    background: var(--red-color);
+}
+
+/*  */
+
+/* メニューヘアセクション */
+.entry-blue {
+    background: var(--blue-color);
+    padding-bottom: 5px;
+}
+
+.area-blue {
+    border: 1px solid var(--black-color);
+}
+
+.area-blue:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+.entry-red {
+    background: var(--red-color);
+    padding-bottom: 5px;
+}
+
+.area-red {
+    border: 1px solid var(--red-color);
+    margin-bottom: 10px;
+}
+
+/*  */
+
+/* オプションメニューセクション */
+.menu-option-section .container::before {
+    content: '';
+    background-image: url(../img/hp/option-back.webp);
+    background-position: right;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.menu-option {
+    border-top: 1px solid var(--white-color);
+    border-bottom: 1px solid var(--white-color);
+}
+
+/*  */
+
+/* リーゼントフォトセクション */
+.madern-style-heading:hover,
+.madern-style-heading:active {
+    color: var(--white-color);
+    background: var(--black-color);
+}
+
+.classic-style-heading:hover,
+.classic-style-heading:active {
+    color: var(--red-color);
+    background-color: var(--white-color);
+    border: 2px solid var(--red-color);
+}
+
+.short-style-heading:hover,
+.short-style-heading:active {
+    color: var(--black-color);
+    background-color: var(--red-color);
+}
+
+.slicked-style-heading:hover,
+.slicked-style-heading:active {
+    color: var(--black-color);
+    background-color: var(--white-color);
+    border: 2px solid var(--black-color);
+}
+
+.texture-style-heading:hover,
+.texture-style-heading:active {
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+
+.fade-style-heading:hover,
+.fade-style-heading:active {
+    color: var(--blue-color);
+    background-color: var(--white-color);
+    border: 2px solid var(--blue-color);
+}
+
+.biker-style-heading:hover,
+.biker-style-heading:active {
+    color: var(--white-color);
+    background-color: var(--red-color);
+}
+
+.img-scroll::-webkit-scrollbar-thumb {
+    background-color: var(--black-color);
+    border-radius: 5px;
+}
+
+.img-scroll::-webkit-scrollbar-track {
+    background: var(--white-color);
+    border: 1px solid var(--black-color);
+}
+
+/*  */
+
+/* リザベーションセクション */
+.reservation-section .tel-number {
+    background: var(--red-color);
+    margin-top: 20px;
+}
+
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="datetime-local"]:focus,
+textarea:focus {
+    border-color: var(--red-color);
+    outline: none;
+}
+
+.send {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+
+input:invalid,
+textarea:invalid {
+    border: 1px solid var(--red-color);
+}
+
+input:valid,
+textarea:valid {
+    border: 1px solid var(--black-color);
+}
+
+/*  */
+
+/*  */
+
+/* ニュースセクション */
+.news-content {
+    border: 1px solid var(--black-color);
+}
+
+.news-labels label:nth-child(1),
+.news-labels label:nth-child(2),
+.news-labels label:nth-child(3) {
+    background: var(--red-color);
+    color: var(--white-color);
+}
+
+input#news1:checked~.news-labels label[for="news1"],
+input#news2:checked~.news-labels label[for="news2"],
+input#news3:checked~.news-labels label[for="news3"] {
+    background: var(--blue-color);
+    color: var(--white-color);
+}
+
+/*  */

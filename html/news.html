@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <meta name="description" content="リーゼント専門理容室の予約・アクセスページ。オンラインで簡単予約、最寄り駅からの道順や駐車場情報も掲載。">
+    <link rel="icon" href="../img/hp/logo.webp" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/"
+    }
+  }
+</script>
+</head>
+
+<body>
+    <!-- PC表示時(701px~)の背景＋左右レイアウト -->
+    <div class="pc-container">
+        <div class="pc-back">
+            <!-- 背景カラーオーバーレイを追加 -->
+            <div class="overlay"></div>
+        </div>
+
+        <!-- 画面三分割した場合 - 左画面 - -->
+        <div class="left-screen">
+            <div class="model-block">
+                <div id="chair"></div>
+                <p class="hint">
+                    360° view — drag to rotate
+                </p>
+            </div>
+        </div>
+
+        <!-- 画面三分割した場合 - 右画面 - -->
+        <div class="right-screen">
+            <ul class="pc-side-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#concept">Concept</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="rezent.html">Rezent</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="style.html">Hair Style</a></li>
+                <li><a href="reservation.html#reservation">Reservation</a></li>
+                <li><a href="reservation.html#access">Access</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sp-layout">
+        <div class="sp-home">
+            <header class="news-detail">
+                <h1 class="header-name">News</h1>
+                <label class="menu-button" for="menu-toggle">Menu</label>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <nav id="nav-menu">
+                    <!-- フォントカラー変更: 'bw'クラスはブルーホワイトカラーを適用 -->
+                    <div class="heading bw"><span class="change-color b">M</span>enu</div>
+                    <button class="close-menu" onclick="closeMenu()">&times;</button>
+                    <ul class="menu-items">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#concept">Concept</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="rezent.html">Rezent</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="style.html">Hair Style</a></li>
+                        <li><a href="reservation.html#reservation">Reservation</a></li>
+                        <li><a href="reservation.html#access">Access</a></li>
+                    </ul>
+                    <img src="../img/hp/illustration-white.webp" alt="リーゼントのイラスト">
+                    <div class="double"></div>
+                    <div class="double-line-secondary"></div>
+                </nav>
+            </header>
+
+            <main>
+                <section class="news-section" id="news">
+                    <div class="container">
+                        <!-- フォントカラー変更: 'rb'クラスはレッドブルーカラーを適用 -->
+                        <h2 class="section-title rb"><span class="change-color r">N</span>ews</h2>
+                        <p class="section-sub b">- お知らせ -</p>
+
+                        <div class="news-wrapper">
+                            <input type="radio" name="news" id="news1" checked>
+                            <input type="radio" name="news" id="news2">
+                            <input type="radio" name="news" id="news3">
+
+                            <div class="news-labels">
+                                <label for="news1">2050.03.03</label>
+                                <label for="news2">2050.01.01</label>
+                                <label for="news3">2049.09.25</label>
+                            </div>
+
+                            <div class="news-contents">
+                                <div class="news-content" id="content1">
+
+                                    <h3 class="news-title">新メニュー登場</h3>
+                                    <p>このたび、リーゼントスタイルの魅力をさらに楽しんでいただける<br class="pc-br">新メニューをご用意しました。</p>
+
+                                    <div class="latest-news">
+
+                                        <h4 class="new-theme">クラシック・リーゼントコレクション</h4>
+                                        <dl>
+                                            <dt>・個性を引き立てる</dt>
+                                            <dd>「ワイルド・ロックスタイル」</dd>
+                                            <dt>・伝統的なフォルムを再現する</dt>
+                                            <dd>「オーセンティック・クラシック」</dd>
+                                            <dt>・時代に合わせてアレンジした</dt>
+                                            <dd>「ソフト・リーゼント」</dd>
+                                        </dl>
+                                    </div>
+
+                                    <div class="styling-detail">
+                                        <p>仕上げには、崩れにくく自然なツヤを与える当店こだわりのスタイリング剤を使用。<br class="sp-br">
+                                            クラシックからモダンまで、あなたに似合うリーゼントスタイルを提案いたします。</p>
+                                        <p>提供開始日：2025年10月15日</p>
+                                    </div>
+
+                                    <div class="contact-info">
+                                        <p>ご予約・お問い合わせは、お電話またはWEBにて受け付けております。</p>
+                                        <p>詳しくは<a href="menu.html">メニューページ</a>をご覧ください。</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="news-content" id="content2">
+                                    <h3 class="news-title">新年のご挨拶</h3>
+
+                                    <p class="intro">新春の候、皆さまにはますますご清栄のこととお慶び申し上げます。</p>
+                                    <p>旧年中は、格別のご愛顧を賜り、誠にありがとうございました。</p>
+                                    <p>皆さまに支えられ、無事に一年を迎えることができましたこと、<br class="pc-br">心より感謝申し上げます。</p>
+
+                                    <p>本年も、より一層の技術向上とサービス向上を目指し、<br class="pc-br">皆さまにご満足いただける理容室を提供してまいります。</p>
+
+                                    <p>皆さまのご健康とご多幸をお祈り申し上げますとともに、<br class="pc-br">本年もご愛顧を賜りますよう、スタッフ一同心よりお願い申し上げます。</p>
+
+                                    <p>敬具</p>
+                                </div>
+
+                                <div class="news-content" id="content3">
+                                    <h3 class="news-title">営業時間変更</h3>
+
+                                    <p class="intro">平素よりリーゼント理容室をご愛顧いただき、<br class="pc-br">誠にありがとうございます。</p>
+
+                                    <p>このたび、サービス向上およびスタッフ体制の見直しに伴い、<br class="pc-br">下記の通り営業時間を変更させていただくこととなりました。</p>
+
+                                    <div class="new-hours">
+                                        <h4 class="	before-hours">【 変更前の営業時間 】</h4>
+                                        <ul>
+                                            <li>平日：10:00～17:00</li>
+                                            <li>土日祝：09:00～18:00</li>
+                                        </ul>
+
+                                        <span class="arrow"></span>
+
+                                        <h4 class="after-hours">【 新しい営業時間 】</h4>
+                                        <ul>
+                                            <li>平日：<span class="change-time">9:00～18:00</span></li>
+                                            <li>土日祝：<span class="change-time">10:00～19:00</span></li>
+                                        </ul>
+                                    </div>
+
+                                    <p>お客様にはご不便をおかけすることもあるかと存じますが、<br class="pc-br">今後とも変わらぬご愛顧を賜りますようお願い申し上げます。</p>
+
+                                    <p class="closing">Black Arrey 1950 代表</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <p>&copy; 2025 Back Alley 1950. All Rights Reserved.</p>
+            </footer>
+            <script src="../js/top.js"></script>
+            <!-- 3dモデル用 -->
+            <script type="module" src="../js/import/import-chair.js"></script>
+            <script type="module">
+                import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

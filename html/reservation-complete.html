@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <meta name="description" content="リーゼント専門理容室のご予約が完了しました。ご予約内容の確認方法や、当日のご案内についてもご確認いただけます。">
+    <link rel="icon" href="../img/hp/logo.webp" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/"
+    }
+  }
+</script>
+</head>
+
+<body>
+    <!-- PC表示時(701px~)の背景＋左右レイアウト -->
+    <div class="pc-container">
+        <div class="pc-back">
+            <!-- 背景カラーオーバーレイを追加 -->
+            <div class="overlay"></div>
+        </div>
+
+        <!-- 画面三分割した場合 - 左画面 - -->
+        <div class="left-screen">
+            <div class="model-block">
+                <div id="pole"></div>
+                <p class="hint">
+                    360° view — drag to rotate
+                </p>
+            </div>
+        </div>
+
+        <!-- 画面三分割した場合 - 右画面 - -->
+        <div class="right-screen">
+            <ul class="pc-side-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#concept">Concept</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="rezent.html">Rezent</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="style.html">Hair Style</a></li>
+                <li><a href="reservation.html#reservation">Reservation</a></li>
+                <li><a href="reservation.html#access">Access</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sp-layout">
+        <div class="sp-home">
+            <header class="reservation-complete-detail">
+                <h1 class="header-name">Reservation</h1>
+                <label class="menu-button" for="menu-toggle">Menu</label>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <nav id="nav-menu">
+                    <!-- フォントカラー変更: 'bw'クラスはブルーホワイトカラーを適用 -->
+                    <div class="heading bw"><span class="change-color b">M</span>enu</div>
+                    <button class="close-menu" onclick="closeMenu()">&times;</button>
+                    <ul class="menu-items">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#concept">Concept</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="rezent.html">Rezent</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="style.html">Hair Style</a></li>
+                        <li><a href="reservation.html#reservation">Reservation</a></li>
+                        <li><a href="reservation.html#access">Access</a></li>
+                    </ul>
+                    <img src="../img/hp/illustration-white.webp" alt="リーゼントのイラスト">
+                    <div class="double"></div>
+                    <div class="double-line-secondary"></div>
+                </nav>
+            </header>
+
+            <main class="thank-page">
+                <section class="thank-section">
+
+                    <div class="container">
+
+                        <!-- フォントカラー変更: 'rb'クラスはレッドブルーカラーを適用 -->
+                        <h2 class="section-title rb"><span class="change-color r">R</span>eservation</h2>
+                        <p class="section-sub b">- ご予約 -</p>
+
+                        <div class="thankyou-box">
+                            <h3 class="finish-heading">ご予約ありがとうございます</h3>
+                            <p>当日はお気をつけてお越しください。</p>
+                            <p>スタッフ一同、お会いできるのを<br class="sp-br">楽しみにしております。</p>
+                            <div class="reservation-actions">
+                                <a href="reservation.html#access">Accese</a>
+                                <a href="tel:+0581234567">Change or Cancel here</a>
+                            </div>
+                            <img src="../img/hp/scissors.webp" alt="リーゼントスタイル専用のはさみ" class="in-store">
+                        </div>
+
+                    </div>
+
+                </section>
+            </main>
+            <footer>
+                <p>&copy; 2025 Back Alley 1950. All Rights Reserved.</p>
+            </footer>
+            <script src="../js/top.js"></script>
+            <script type="module" src="../js/import/import-pole.js"></script>
+            <script type="module">
+                import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
