@@ -613,7 +613,7 @@
     input#news1:checked~.news-contents #content1,
     input#news2:checked~.news-contents #content2,
     input#news3:checked~.news-contents #content3 {
-        height: 700px;
+        height: 800px;
     }
 
     .news-labels label:nth-child(1),
