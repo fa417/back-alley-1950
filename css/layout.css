@@ -58,12 +58,11 @@ body {
 .access-section .container,
 .news-section .container,
 .thank-section .container {
-    min-height: 100vh;
+    min-height: 50vh;
     padding: 20px 0;
 }
 
 .concept-section .wrapper,
-.rezent-section .wrapper,
 .menu-section .wrapper,
 .style-hair-section .wrapper {
     position: absolute;
@@ -94,7 +93,7 @@ body {
 }
 
 .main-section .container {
-    min-height: 100vh;
+    min-height: 50vh;
     padding-bottom: 20px;
 }
 
@@ -102,7 +101,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 50vh;
     flex-direction: column;
     text-align: center;
     position: relative;
@@ -138,10 +137,10 @@ body {
 
 #nav-menu {
     position: fixed;
-    bottom: -100vh;
+    bottom: -50vh;
     right: 0;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -400,7 +399,7 @@ body {
 /* リザベーションセクション */
 .reservation-section .container,
 .menu-hair-section .container {
-    min-height: 100vh;
+    min-height: 50vh;
     padding: 20px 0 40px;
 }
 
@@ -451,7 +450,7 @@ button.send {
 
 /* アクセスセクション */
 .access-section .container {
-    min-height: 100vh;
+    min-height: 50vh;
     padding: 40px 0 20px 0;
 }
 
