@@ -12,7 +12,7 @@
 
 /* 全体 */
 body,
-.sp-home{
+.sp-home {
     background: var(--white-color);
 }
 
@@ -21,9 +21,9 @@ body,
 /* 共通 */
 .title-container,
 .types-section .back-blue,
-.types-section .back-red{
+.types-section .back-red {
     opacity: 0;
-   
+
 }
 
 .concept-section .wrapper,
@@ -42,7 +42,7 @@ body,
 .menu-option-section .container,
 .reservation-section .container,
 .access-section .container,
-.thank-section .container{
+.thank-section .container {
     opacity: 0;
 }
 
@@ -70,7 +70,7 @@ body,
 
 .title-container.visible,
 .types-section .back-blue.visible,
-.types-section .back-red.visible{
+.types-section .back-red.visible {
     animation: slideUp 2s forwards;
 }
 
@@ -90,7 +90,7 @@ body,
 .menu-option-section .container.visible,
 .reservation-section .container.visible,
 .access-section .container.visible,
-.thank-section .container.visible{
+.thank-section .container.visible {
     animation: centerUp 2s forwards;
 }
 
@@ -101,7 +101,7 @@ header {
     background: var(--white-color);
 }
 
-.main-section .container{
+.main-section .container {
     background-color: var(--white-color);
 }
 
@@ -115,7 +115,7 @@ header {
     transform: translateY(-10px);
 }
 
- .title-container::before {
+.title-container::before {
     content: "";
     background-image: url(../img/hp/pomade-3d.webp);
     background-position: center;
@@ -248,7 +248,7 @@ header {
 
 .inner {
     display: flex;
-    gap: 100px;
+    gap: 50px;
     animation: scrollNews 30s linear infinite;
     width: max-content;
 }
@@ -265,28 +265,28 @@ header {
 
 .inner article {
     flex: 0 0 auto;
-    width: 50px;
+    width: 150px;
 }
 
 .active-link {
     display: flex;
-  flex-direction: column; /* 縦並びにする */
-  align-items: center;    /* 横方向中央寄せ */
-  justify-content: center;/* 縦方向中央寄せ */
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  gap: 10px; /* 要素の間にスペースを入れたいとき */
-  text-decoration: none;}
+    align-items: center;
+    text-decoration: none;
+    height: 100%;
+}
 
 .inner .text {
-   width: 100%;
+    width: 100%;
     text-align: center;
 }
 
 .picture {
-    width: 100%;
     aspect-ratio: 1 / 1;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .picture img {
@@ -594,7 +594,7 @@ header {
     background-image: url(../img/hp/texture.webp);
     background-size: cover;
     background-position: right;
-    background-color: rgba(28,28,59,1);
+    background-color: rgba(28, 28, 59, 1);
     background-blend-mode: soft-light;
     z-index: -1;
 }
