@@ -56,9 +56,8 @@ body {
 .menu-section .container,
 .style-hair-section .container,
 .access-section .container,
-.news-section .container,
-.thank-section .container {
-    min-height: 70vh;
+.news-section .container {
+    min-height: 80vh;
     padding: 20px 0;
 }
 
@@ -96,7 +95,7 @@ body {
 }
 
 .main-section .container {
-    min-height: 70vh;
+    min-height: 80vh;
     padding-bottom: 20px;
 }
 
@@ -104,7 +103,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 70vh;
+    min-height: 80vh;
     flex-direction: column;
     text-align: center;
     position: relative;
@@ -398,7 +397,7 @@ body {
 /* リザベーションセクション */
 .reservation-section .container,
 .menu-hair-section .container {
-    min-height: 70vh;
+    min-height: 80vh;
     padding: 20px 0 40px;
 }
 
@@ -449,7 +448,7 @@ button.send {
 
 /* アクセスセクション */
 .access-section .container {
-    min-height: 70vh;
+    min-height: 80vh;
     padding: 40px 0 20px 0;
 }
 
@@ -561,6 +560,11 @@ input#news3:checked~.news-contents #content3 {
 /*  */
 
 /* サンクセクション */
+.thank-section .container {
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
 .thank-page {
     flex: 1;
 }
