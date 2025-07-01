@@ -47,18 +47,8 @@
 
     }
 
-    #nav-menu {
-        padding: 30px;
-        text-align: center;
-    }
-
     .menu-items a {
         font-size: var(--font-size-18px);
-    }
-
-    .close-menu {
-        top: 60px;
-        right: 30px;
     }
 
     /*  */
@@ -93,23 +83,13 @@
 
     .section-title.rb {
         letter-spacing: .05rem;
-        margin-left: 20px;
     }
 
     .section-sub.b {
         font-size: var(--font-size-14px);
-        margin-left: 20px;
     }
 
-    .rezent-detail,
-    .menu-detail,
-    .type-photos-detail,
-    .booking-info-detail,
-    .news-detail,
-    .reservation-complete-detail {
-        padding-left: 20px;
-    }
-
+    s
     /*  */
 
     /* ヘッダー・メインセクション */
@@ -159,12 +139,10 @@
     .menu-section .container .section-title.bw,
     .style-hair-section .container .section-title.rw {
         letter-spacing: .05rem;
-        margin-left: 20px;
     }
 
     .section-sub.w {
         font-size: var(--font-size-14px);
-        margin-left: 20px;
     }
 
     .concept-section .wrapper>p,
@@ -292,16 +270,10 @@
 
     .section-title.br {
         letter-spacing: .05rem;
-        margin-left: 20px;
     }
 
     .section-sub.r {
         font-size: var(--font-size-14px);
-        margin-left: 20px;
-    }
-
-    .about-section .wrapper {
-        margin: 20px;
     }
 
     /*  */
@@ -374,15 +346,6 @@
         padding: 30px 0 50px;
     }
 
-    .menu-hair-section .menu-hair {
-        margin: 20px 20px 0 20px;
-    }
-
-    /* .area-blue,
-    .area-red {
-        width: 90%;
-    } */
-
     .area-blue:not(:last-of-type) {
         margin: 0 auto 20px;
     }
@@ -420,8 +383,7 @@
     }
 
     .menu-option {
-        width: 90%;
-        margin: 20px auto;
+        margin: 20px 10px;
         padding: 20px 0;
     }
 
@@ -496,7 +458,7 @@
     }
 
     .web-reservation {
-        margin: 20px auto 0;
+        margin: 20px 20px 0 20px;
     }
 
     form {
@@ -512,7 +474,6 @@
     input[type="email"],
     input[type="datetime-local"],
     textarea {
-        width: 90%;
         margin-bottom: 20px;
     }
 
@@ -581,9 +542,7 @@
 
     /* ニュースセクション */
     .news-wrapper {
-        width: 90%;
         padding: 0 20px;
-        margin: 20px auto 0;
     }
 
     .news-content {
@@ -647,10 +606,6 @@
     /*  */
 
     /* サンクセクション */
-    .thankyou-box {
-        margin-top: 20px;
-    }
-
     .finish-heading {
         font-size: var(--font-size-30px);
     }
@@ -671,10 +626,6 @@
 
     .reservation-actions a {
         padding: 5px 10px;
-    }
-
-    .in-store {
-        width: 70%;
     }
 
     /*  */
@@ -797,16 +748,11 @@
         font-size: var(--font-size-18px);
         width: 65px;
         height: 65px;
-        bottom: 20px;
-        right: 20px;
     }
 
     #nav-menu {
-        padding: 20px 30px;
-        text-align: center;
         right: 0;
         width: 60%;
-
     }
 
     .menu-items {
@@ -815,10 +761,6 @@
 
     .menu-items a {
         font-size: var(--font-size-18px);
-    }
-
-    .close-menu {
-        right: 30px;
     }
 
     /*  */
@@ -853,22 +795,10 @@
 
     .section-title.rb {
         letter-spacing: .05rem;
-        margin-left: 20px;
     }
 
     .section-sub.b {
         font-size: var(--font-size-14px);
-        margin-left: 20px;
-    }
-
-    .header,
-    .rezent-detail,
-    .menu-detail,
-    .type-photos-detail,
-    .booking-info-detail,
-    .news-detail,
-    .reservation-complete-detail {
-        padding-left: 20px;
     }
 
     /*  */
@@ -924,12 +854,10 @@
     .menu-section .container .section-title.bw,
     .style-hair-section .container .section-title.rw {
         letter-spacing: .05rem;
-        margin-left: 20px;
     }
 
     .section-sub.w {
         font-size: var(--font-size-14px);
-        margin-left: 20px;
     }
 
     .concept-section .wrapper>p,
@@ -949,12 +877,8 @@
         bottom: 7%;
     }
 
-    .inner {
-        gap: 150px;
-    }
-
-    .active-link {
-        gap: 10px;
+    .inner article {
+        width: 200px;
     }
 
     @keyframes scrollNews {
@@ -965,14 +889,6 @@
         100% {
             transform: translateX(-30%);
         }
-    }
-
-    .inner-title {
-        font-size: var(--font-size-16px);
-    }
-
-    .text>p {
-        font-size: var(--font-size-14px);
     }
 
     /*  */
@@ -989,12 +905,12 @@
     }
 
     .loop-img {
-        height: 120px;
+        height: 160px;
         bottom: 10%;
     }
 
     .loop-img img {
-        height: 120px;
+        height: 160px;
     }
 
     @keyframes loop-scroll {
@@ -1060,16 +976,10 @@
 
     .section-title.br {
         letter-spacing: .05rem;
-        margin-left: 20px;
     }
 
     .section-sub.r {
         font-size: var(--font-size-14px);
-        margin-left: 20px;
-    }
-
-    .about-section .wrapper {
-        margin: 20px;
     }
 
     /*  */
@@ -1091,17 +1001,12 @@
 
     .back-blue,
     .back-red {
-        padding: 40px 20px;
+        padding: 50px 20px;
     }
 
     .style-left,
     .style-right {
         width: 20%;
-    }
-
-    .description {
-        margin-top: 0;
-        width: 80%;
     }
 
     .subtitle,
@@ -1171,15 +1076,6 @@
         padding: 30px 0 50px;
     }
 
-    .menu-hair-section .menu-hair {
-        margin: 20px 20px 0 20px;
-    }
-
-    .area-blue,
-    .area-red {
-        width: 90%;
-    }
-
     .area-blue:not(:last-of-type) {
         margin: 0 auto 20px;
     }
@@ -1217,8 +1113,7 @@
     }
 
     .menu-option {
-        width: 90%;
-        margin: 20px auto;
+        margin: 20px;
         padding: 20px 0;
     }
 
@@ -1278,8 +1173,6 @@
 
     .close {
         font-size: var(--font-size-36px);
-        top: 20px;
-        right: 20px;
     }
 
     /*  */
@@ -1328,7 +1221,7 @@
     }
 
     .web-reservation {
-        margin: 20px auto 0;
+        margin: 20px 20px 0 20px;
     }
 
     form {
@@ -1344,7 +1237,6 @@
     input[type="email"],
     input[type="datetime-local"],
     textarea {
-        width: 90%;
         margin-bottom: 20px;
     }
 
@@ -1413,9 +1305,7 @@
 
     /* ニュースセクション */
     .news-wrapper {
-        width: 90%;
         padding: 0 20px;
-        margin: 20px auto 0;
     }
 
     .news-content {
@@ -1479,10 +1369,6 @@
     /*  */
 
     /* サンクセクション */
-    .thankyou-box {
-        margin-top: 20px;
-    }
-
     .finish-heading {
         font-size: var(--font-size-30px);
     }
@@ -1503,10 +1389,6 @@
 
     .reservation-actions a {
         padding: 5px 10px;
-    }
-
-    .in-store {
-        width: 70%;
     }
 
     /*  */

@@ -47,7 +47,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 
@@ -120,13 +120,13 @@ body {
 
 .menu-button {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 20px;
+    right: 20px;
     border-radius: 50%;
     width: 60px;
     height: 60px;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,7 +158,7 @@ body {
 
 .close-menu {
     position: absolute;
-    top: 50px;
+    top: 60px;
     right: 20px;
     background: transparent;
     border: none;
@@ -214,7 +214,7 @@ body {
 }
 
 .about-section .wrapper {
-    margin: 20px 10px;
+    margin: 20px;
 }
 
 .scroll {
@@ -271,7 +271,7 @@ body {
 }
 
 .menu-hair-section .menu-hair {
-    margin: 20px 10px 0 10px;
+    margin: 20px 20px 0 20px;
 }
 
 /*  */
@@ -283,7 +283,7 @@ body {
 }
 
 .menu-option {
-    margin: 10px;
+    margin: 10px 20px;
     padding: 10px 0;
 }
 
@@ -325,7 +325,7 @@ body {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     left: 0;
     top: 0;
     width: 100%;
@@ -406,7 +406,7 @@ body {
 }
 
 .web-reservation {
-    margin: 10px 10px 0 10px;
+    margin: 10px 20px 0 20px;
 }
 
 form {
@@ -461,7 +461,7 @@ button.send {
 }
 
 .shop-imgs {
-    width: 45%;
+    width: 50%;
 }
 
 .outside-photo,
@@ -473,7 +473,6 @@ button.send {
 
 .location-contact-info {
     width: 50%;
-    margin: 0 auto;
 }
 
 .address-area .access-info {
@@ -508,7 +507,7 @@ button.send {
 /* ニュースセクション */
 .news-wrapper {
     width: 100%;
-    padding: 0 10px;
+    padding: 0 20px;
     margin-top: 20px;
 }
 
@@ -571,6 +570,7 @@ input#news3:checked~.news-contents #content3 {
 
 .thankyou-box {
     margin-top: 20px;
+    padding: 0 20px;
 }
 
 .thank-section a {
@@ -586,7 +586,6 @@ input#news3:checked~.news-contents #content3 {
 }
 
 .in-store {
-    width: 90%;
     object-fit: cover;
     margin-top: 20px;
 }
