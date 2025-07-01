@@ -246,7 +246,7 @@
     }
 
     .loop-img img {
-        height: 120px;
+        height: 200px;
     }
 
     @keyframes loop-scroll {
