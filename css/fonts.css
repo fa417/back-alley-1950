@@ -183,7 +183,7 @@ body {
 
 .inner-title {
     color: var(--black-color);
-    font-size: var(--font-size-14px);
+    font-size: var(--font-size-12px);
     white-space: nowrap;
     font-weight: var(--font-weight-regular);
 }
