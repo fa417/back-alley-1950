@@ -159,7 +159,7 @@ body {
 
 .close-menu {
     position: absolute;
-    top: 60px;
+    top: 50px;
     right: 20px;
     background: transparent;
     border: none;
@@ -350,8 +350,8 @@ body {
     font-size: var(--font-size-18px);
     font-weight: bold;
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 10px;
+    right: 20px;
     cursor: pointer;
 }
 
