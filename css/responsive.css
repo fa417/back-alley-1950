@@ -612,7 +612,7 @@
 
     .news-labels label:nth-child(1),
     .news-labels label:nth-child(2),
-    .news-labels label:nth-child(3),{
+    .news-labels label:nth-child(3){
         height: 700px;
     }
 
