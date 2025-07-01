@@ -126,10 +126,6 @@
     /*  */
 
     /* ヘッダー・メインセクション */
-    /* .title-container::before {
-        background-size: 50%;
-    } */
-
     .site-name .name,
     .site-name .name-number,
     .site-name .name-sub {
@@ -246,7 +242,7 @@
     }
 
     .loop-img img {
-        height: 200px;
+        height: 250px;
     }
 
     @keyframes loop-scroll {
