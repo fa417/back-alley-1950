@@ -184,12 +184,9 @@
         bottom: 7%;
     }
 
-    .inner {
-        gap: 150px;
-    }
-
-    .active-link {
-        gap: 10px;
+    .inner article {
+        flex: 0 0 auto;
+        width: 200px;
     }
 
     @keyframes scrollNews {
