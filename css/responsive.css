@@ -612,6 +612,12 @@
 
     .news-labels label:nth-child(1),
     .news-labels label:nth-child(2),
+    .news-labels label:nth-child(3){
+        height: 700px;
+    }
+
+    .news-labels label:nth-child(1),
+    .news-labels label:nth-child(2),
     .news-labels label:nth-child(3),
     input#news1:checked~.news-labels label[for="news1"],
     input#news2:checked~.news-labels label[for="news2"],
