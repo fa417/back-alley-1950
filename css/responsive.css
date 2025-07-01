@@ -126,9 +126,9 @@
     /*  */
 
     /* ヘッダー・メインセクション */
-    .title-container::before {
+    /* .title-container::before {
         background-size: 50%;
-    }
+    } */
 
     .site-name .name,
     .site-name .name-number,
@@ -241,7 +241,7 @@
     }
 
     .loop-img {
-        height: 120px;
+        height: 150px;
         bottom: 10%;
     }
 
