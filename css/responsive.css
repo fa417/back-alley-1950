@@ -52,10 +52,6 @@
         text-align: center;
     }
 
-    /* .menu-items {
-        gap: 20px;
-    } */
-
     .menu-items a {
         font-size: var(--font-size-18px);
     }
