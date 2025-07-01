@@ -467,7 +467,7 @@ button.send {
 
 .outside-photo,
 .inside-photo {
-    height: 35vh;
+    height: 20vh;
     object-fit: cover;
     width: 100%;
 }
