@@ -61,7 +61,7 @@
     }
 
     .close-menu {
-        top: 50px;
+        top: 60px;
         right: 30px;
     }
 
@@ -330,7 +330,7 @@
 
     .back-blue,
     .back-red {
-        padding: 40px 20px;
+        padding: 50px 20px;
     }
 
     .style-left,
@@ -557,7 +557,7 @@
 
     .outside-photo,
     .inside-photo {
-        height: 40vh;
+        height: 50vh;
     }
 
     .location-contact-info {

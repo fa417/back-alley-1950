@@ -159,7 +159,7 @@ body {
 
 .close-menu {
     position: absolute;
-    top: 50px;
+    top: 60px;
     right: 20px;
     background: transparent;
     border: none;
@@ -268,10 +268,7 @@ body {
 
 /* メニューヘアセクション */
 .entry-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10px;
+    text-align: center;
 }
 
 .menu-hair-section .menu-hair {
@@ -470,7 +467,7 @@ button.send {
 
 .outside-photo,
 .inside-photo {
-    height: 43vh;
+    height: 45vh;
     object-fit: cover;
     width: 100%;
 }
