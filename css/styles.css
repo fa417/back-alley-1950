@@ -181,7 +181,7 @@ header {
 }
 
 .loop-text p {
-    animation: scrollText 30s linear infinite;
+    animation: scrollText 20s linear infinite;
     margin-right: 30px;
     white-space: nowrap;
 }
@@ -370,7 +370,7 @@ header {
     display: flex;
     gap: 10px;
     width: max-content;
-    animation: loop-scroll 30s linear infinite;
+    animation: loop-scroll 20s linear infinite;
 }
 
 .loop-img img {
@@ -632,7 +632,7 @@ header {
 /* メニューヘアセクション */
 .entry-blue {
     background: var(--blue-color);
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 .area-blue {
@@ -645,7 +645,7 @@ header {
 
 .entry-red {
     background: var(--red-color);
-    padding-bottom: 5px;
+    padding: 10px;
 }
 
 .area-red {
