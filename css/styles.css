@@ -315,7 +315,6 @@ header {
     bottom: 0;
     background-image: url(../img/hp/texture.webp);
     background-color: rgba(178, 34, 34, 1);
-    /* 深赤 */
     background-blend-mode: soft-light;
     background-size: cover;
     background-position: right;
@@ -370,7 +369,7 @@ header {
     display: flex;
     gap: 10px;
     width: max-content;
-    animation: loop-scroll 20s linear infinite;
+    animation: loop-scroll 55s linear infinite;
 }
 
 .loop-img img {
