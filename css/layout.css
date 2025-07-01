@@ -170,7 +170,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     list-style: none;
     margin-top: 20px;
     text-align: center;
