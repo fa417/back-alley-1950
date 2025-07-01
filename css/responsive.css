@@ -126,9 +126,11 @@
     /*  */
 
     /* ヘッダー・メインセクション */
-    /* .title-container::before {
+    .title-container::before {
         background-size: 50%;
-    } */
+        top: calc(100vh - 30px);
+
+    }
 
     .site-name .name,
     .site-name .name-number,

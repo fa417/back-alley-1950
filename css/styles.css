@@ -119,14 +119,13 @@ header {
     content: "";
     background-image: url(../img/hp/pomade-3d.webp);
     background-position: center;
-    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: -2;
-    background-size: 60%;
+    background-size: 80%;
     transform: rotate(-20deg);
 }
 
