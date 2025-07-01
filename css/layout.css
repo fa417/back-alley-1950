@@ -58,7 +58,7 @@ body {
 .access-section .container,
 .news-section .container,
 .thank-section .container {
-    min-height: 80vh;
+    min-height: 70vh;
     padding: 20px 0;
 }
 
@@ -76,7 +76,7 @@ body {
 /*  */
 
 /* メインセクション */
-header{
+.header{
     padding-left: 20px;
 }
 
@@ -96,7 +96,7 @@ header{
 }
 
 .main-section .container {
-    min-height: 80vh;
+    min-height: 70vh;
     padding-bottom: 20px;
 }
 
@@ -104,7 +104,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 70vh;
     flex-direction: column;
     text-align: center;
     position: relative;
@@ -402,7 +402,7 @@ header{
 /* リザベーションセクション */
 .reservation-section .container,
 .menu-hair-section .container {
-    min-height: 80vh;
+    min-height: 70vh;
     padding: 20px 0 40px;
 }
 
@@ -453,7 +453,7 @@ button.send {
 
 /* アクセスセクション */
 .access-section .container {
-    min-height: 80vh;
+    min-height: 70vh;
     padding: 40px 0 20px 0;
 }
 
