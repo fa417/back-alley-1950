@@ -237,12 +237,12 @@
     }
 
     .loop-img {
-        height: 250px;
+        height: 200px;
         bottom: 10%;
     }
 
     .loop-img img {
-        height: 250px;
+        height: 200px;
     }
 
     @keyframes loop-scroll {

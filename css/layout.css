@@ -76,6 +76,10 @@ body {
 /*  */
 
 /* メインセクション */
+header{
+    padding-left: 20px;
+}
+
 .site-name {
     margin: 0;
     padding: 0;
