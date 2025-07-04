@@ -45,6 +45,12 @@ body {
 
 /*  */
 
+/* SP 追従 */
+.home-link {
+    font-size: var(--font-size-12px);
+}
+/*  */
+
 /* メインセクション */
 .name {
     font-size: var(--font-size-12px);

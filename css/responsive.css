@@ -25,8 +25,8 @@
     /*  */
 }
 
-/* モバイルサイズ -- 379px ~ 700px -- */
-@media (min-width: 379px) and (max-width: 700px) {
+/* モバイルサイズ -- 379px ~ 768px -- */
+@media (min-width: 379px) and (max-width: 768px) {
 
     /* 全体 */
     .pc-container {
@@ -89,7 +89,13 @@
         font-size: var(--font-size-14px);
     }
 
-    s
+    /*  */
+
+    /* SP 追従 */
+    .home-link {
+        padding: 10px 15px;
+    }
+
     /*  */
 
     /* ヘッダー・メインセクション */
@@ -633,8 +639,8 @@
 }
 
 
-/* タブレットサイズ -- 701px ~ 1024px -- */
-@media (min-width: 701px) and (max-width: 1024px) {
+/* タブレットサイズ -- 769px ~ 1024px -- */
+@media (min-width: 769px) and (max-width: 1024px) {
 
     /* 全体 */
     body {
@@ -799,6 +805,13 @@
 
     .section-sub.b {
         font-size: var(--font-size-14px);
+    }
+
+    /*  */
+
+    /* SP 追従 */
+    .home-link {
+        display: none;
     }
 
     /*  */
@@ -1583,6 +1596,13 @@
 
     .thank-section .container {
         min-height: 100vh;
+    }
+
+    /*  */
+
+    /* SP 追従 */
+    .home-link {
+        display: none;
     }
 
     /*  */
