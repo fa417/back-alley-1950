@@ -99,14 +99,13 @@ body,
 
 /* SP 追従 */
 .home-link {
-    color: var(--black-color);
     background: var(--white-color);
-    opacity: 0.5;
+    opacity: 1;
     transition: opacity 0.3s;
 }
 
-.home-link:hover {
-    opacity: 1;
+.home-link:active {
+    opacity: 0.5;
 }
 /*  */
 
