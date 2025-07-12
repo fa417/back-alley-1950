@@ -1,19 +1,45 @@
-🕶️ Back Alley 1950 - Retro Barbershop Concept Site
-A fictional landing page for "Rezent," a barbershop specializing in pompadour styles.
-Designed with a retro alleyway vibe to evoke nostalgia and bold style.
+# 🕶️ Back Alley 1950 – Retro Barbershop Concept Site
 
-🔗 Live Site
+A fictional landing page for "Rezent," a barbershop specializing in pompadour hairstyles.  
+Designed with a retro alleyway atmosphere to evoke nostalgia and bold masculine style.
+
+---
+
+## 🔗 Live Site  
 https://back-alley-1950.vercel.app/index.html
 
-🛠️ Built With
+---
 
-HTML / CSS / JavaScript
+## 🛠️ Built With
+- HTML / CSS / JavaScript  
+- Three.js (for rendering 3D models)  
+- Blender (for creating 3D assets)  
+- Responsive design with media queries  
+- Hosted on Vercel
 
-Three.js / Blender
+---
 
-Responsive Design
+## 🎯 Purpose
 
-Hosted on Vercel
+This project was created to:
 
-🎯 Purpose
-Created to explore interactive 3D design and strengthen front-end skills through a hands-on deployment workflow.
+- Explore the integration of interactive 3D content in websites  
+- Practice camera controls, lighting, and model interaction using Three.js  
+- Develop a nostalgic brand concept with unique visual storytelling  
+- Strengthen front-end development and deployment workflow through hands-on experience
+
+---
+
+## 💡 Highlights
+
+- 3D pomade model rendered with Three.js and custom lighting  
+- Retro color palette and textures inspired by 1950s alleyways  
+- Optimized for both desktop and mobile viewports  
+- Custom animations and camera transitions for immersive experience
+
+---
+
+## 👤 Author
+
+- Fuko ([@fa417](https://github.com/fa417))  
+- [Portfolio Website](https://fuko-portfolio.vercel.app)
